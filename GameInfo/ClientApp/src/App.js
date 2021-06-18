@@ -12,6 +12,7 @@ import { AiFillInfoCircle } from "react-icons/ai";
 import About from "./components/About";
 import Games from "./components/Games";
 import GameDetail from "./components/GameDetail";
+import AllGames from "./components/AllGames";
 
 export default function App() {
   return (
@@ -34,8 +35,13 @@ export default function App() {
                     </Link>
                   </li>
                   <li class="nav-item mx-4">
+                    <Link className="nav-link" to="/allgames">
+                      <MdGames size={30} /> All Games
+                    </Link>
+                  </li>
+                  <li class="nav-item mx-4">
                     <Link className="nav-link" to="/games">
-                      <MdGames size={30} /> Games
+                      <MdGames size={30} /> My Games
                     </Link>
                   </li>
                   {/* <li class="nav-item mx-4">
@@ -79,11 +85,16 @@ export default function App() {
               render={() => <HomePage />}
             />
 
+            <Route exact path="/allgames" component={() => <AllGames />} />
+
+
             <Route
               exact
               path="/games"
               render={() => <Games />}
             />
+
+
 
 
             <Route exact path="/about" component={() => <About />} />
@@ -98,4 +109,8 @@ export default function App() {
     </>
   )
 }
+
+
+
+
 
