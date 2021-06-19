@@ -2,22 +2,51 @@ import React, { useState, useEffect } from "react";
 import './custom.css'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Footer from "./components/Footer";
-
 // import "./App.css";
 import HomePage from "./components/HomePage";
-import { MdGames } from "react-icons/md";
-import { FaHeart } from "react-icons/fa";
-import { AiFillHome } from "react-icons/ai";
-import { AiFillInfoCircle } from "react-icons/ai";
 import About from "./components/About";
 import Games from "./components/Games";
 import GameDetail from "./components/GameDetail";
 import AllGames from "./components/AllGames";
 import Search from "./components/Search";
+import FacebookLogin from "react-facebook-login";
+
+
+import { MdGames } from "react-icons/md";
+import { FaHeart } from "react-icons/fa";
+import { AiFillHome } from "react-icons/ai";
+import { AiFillInfoCircle } from "react-icons/ai";
 
 export default function App() {
 
-  const [searchInput, setSearchInput] = useState('')
+  const [searchInput, setSearchInput] = useState('');
+  const [name, setName] = useState("");
+  const [token, setToken] = useState("");
+  const [email, setEmail] = useState("");
+
+  const setInfo = (n, t, e) => {
+    setName(n);
+    setToken(t);
+    setEmail(e);
+  };
+
+
+  
+  const responseFacebook = (response) => {
+    setName(response.name);
+    setEmail(response.email);
+    setToken(response.accessToken);
+};
+
+
+useEffect(() => {
+  setInfo(name, token, email);
+  return () => {
+    // cleanup
+  };
+}, [name, token, email]);
+
+
 
   return (
     <>
@@ -83,6 +112,25 @@ export default function App() {
                   </Link>
                 
                 </form>
+                {token ? (
+                            <Link className="nav-link text-light" to="/logout">
+                            LOGOUT
+                          </Link>
+      ) : (
+        <center>
+          <FacebookLogin
+            appId="1947245272097728"
+            autoLoad={false}
+            fields="name,email,picture"
+            callback={responseFacebook}
+            textButton=" Login"
+            cssClass="my-facebook-button-class"
+            icon="fa-facebook"
+            width="10px"
+            className="btn btn-primary"
+          />
+        </center>
+      )}
               </div>
             </div>
           </nav>
@@ -91,7 +139,7 @@ export default function App() {
             <Route
               exact
               path="/"
-              render={() => <HomePage />}
+              render={() => <HomePage setInfo={setInfo} />}
             />
 
             <Route exact path="/allgames" component={() => <AllGames />} />
@@ -110,6 +158,10 @@ export default function App() {
 
             <Route exact path={`/games/:id`} render={(props) => <GameDetail {...props} />} />
 
+            <Route
+              path="/logout"
+              render={() => <HomePage />}
+            />
 
             <Route exact path="/search" component={() => <Search target={searchInput}/>} />
 
