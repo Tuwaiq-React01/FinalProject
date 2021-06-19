@@ -31,7 +31,7 @@ export default function About() {
         <h3>
           <b>
             
-            CONTACT US: <a href="#">GameInfo@example.com</a>
+            CONTACT US: <a href="#">GameLibrary@example.com</a>
           </b>
         </h3>
       </div>

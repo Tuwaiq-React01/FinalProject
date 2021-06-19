@@ -55,28 +55,15 @@ export default function GameDetail(props) {
       
 
       <div class="row">
-    <div class="col-sm-4">
+    <div class="col-lg-4">
         <img src={game.image} alt="game image" width="350px" />
     </div>
-    <div class="col-8">
+    <div class="col-lg-8">
 
     {editMode ? 
     <div> 
 
 <GameForm game={game} editGame={editGame} mode="edit" editStatus={editStatus}/>
-    
-    
-{/* <div className="d-flex justify-content-end">
-
-<button className="btn btn-primary me-2" onClick={editGame}>
-    UPDATE!
-</button>
-<button className="btn btn-danger" onClick={() => setEditMode(false)}> CANCEL </button>
-</div> */}
-
-
-    
-    
 
     </div>
     

@@ -8,7 +8,7 @@ export default class HomePage extends Component {
       
       <div className="container App">
 
-      <h1 className="display-3"> Welcome to GameInfo! </h1>
+      <h1 className="display-3"> Welcome to GameLibrary! </h1>
       <Link to="/allgames"> <button className="btn btn-primary">SHOW ALL GAMES! <AiOutlineArrowRight className="ms-2" /> </button> </Link>
 
     <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">

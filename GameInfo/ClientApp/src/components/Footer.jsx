@@ -14,7 +14,7 @@ export default function Footer() {
           <div class="row">
             <div class="col-md-9">
               <span className="text-light">
-                &copy; 2021 GameInfo | Follow us on our social Media!
+                &copy; 2021 GameLibrary | Follow us on our social Media!
               </span>
             </div>
 
