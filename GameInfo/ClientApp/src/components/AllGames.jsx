@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import ApiGames from "./ApiGames";
 
 export default function AllGames() {
-  const url = "https://api.rawg.io/api/games?key=1418f80ceb1a47eca6e9964f0eb50613";
+  const url = "https://api.rawg.io/api/games?key=1418f80ceb1a47eca6e9964f0eb50613&page_size=50";
   const [games, setGames] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -42,27 +43,6 @@ export default function AllGames() {
   }
 
 
-  const displayGames = games.map((game, i) => {
-    return (
-      <div className="col-lg-4 mt-5" key={i}>
-        <div className="card text-white bg-dark" style={{ width: "21rem" }}>
-          <img
-            src={game.background_image}
-            className="card-img-top"
-            alt="game picture"
-            width="200px"
-            height="300px"
-          />
-          <div className="card-body">
-            <h5 className="card-title"> {game.name} </h5>
-            <p className="card-text"></p>
-          </div>
-          <button className="btn btn-primary" onClick={() => AddToMyGames(game)}>Add to My Games</button>
-        </div>
-      </div>
-    );
-  });
-
   return (
     <div className="container">
 
@@ -77,7 +57,7 @@ export default function AllGames() {
         </div>
       </div>    
     : 
-    <div className="row">{displayGames}</div>
+    <div className="row">{<ApiGames games={games} AddToMyGames={AddToMyGames}/>}</div>
     
     }
 

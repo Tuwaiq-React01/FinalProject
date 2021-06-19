@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function DisplayGames(props) {
   let displayGames = props.allGames.map((ga, i) => {
     return (
-      <div className="col-md-3 mt-5" key={i}>
+      <div className="col-lg-3 col-md-4 col-sm-6 mt-5" key={i}>
         <div className="card text-white bg-dark" style={{ width: "18rem" }}>
           <Link to={`/games/${ga.id}`}>
             <img

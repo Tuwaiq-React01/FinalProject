@@ -6,15 +6,19 @@ import Footer from "./components/Footer";
 // import "./App.css";
 import HomePage from "./components/HomePage";
 import { MdGames } from "react-icons/md";
-import { BsFillHeartFill } from "react-icons/bs";
+import { FaHeart } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
 import { AiFillInfoCircle } from "react-icons/ai";
 import About from "./components/About";
 import Games from "./components/Games";
 import GameDetail from "./components/GameDetail";
 import AllGames from "./components/AllGames";
+import Search from "./components/Search";
 
 export default function App() {
+
+  const [searchInput, setSearchInput] = useState('')
+
   return (
     <>
       <Router>
@@ -27,7 +31,12 @@ export default function App() {
               <a class="navbar-brand" href="/">
                 GameList
               </a>
-              <div class="collapse navbar-collapse" id="navbarColor01">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item mx-4">
                     <Link className="nav-link" to="/">
@@ -41,7 +50,7 @@ export default function App() {
                   </li>
                   <li class="nav-item mx-4">
                     <Link className="nav-link" to="/games">
-                      <MdGames size={30} /> My Games
+                      <FaHeart size={30} /> My Games
                     </Link>
                   </li>
                   {/* <li class="nav-item mx-4">
@@ -57,7 +66,7 @@ export default function App() {
                 </ul>
 
                 <form class="d-flex">
-                  {/* <input
+                  <input
                     class="form-control me-sm-2 m-2"
                     type="text"
                     placeholder="Search"
@@ -72,7 +81,7 @@ export default function App() {
                       Search
                     </button>
                   </Link>
-                 */}
+                
                 </form>
               </div>
             </div>
@@ -100,6 +109,9 @@ export default function App() {
             <Route exact path="/about" component={() => <About />} />
 
             <Route exact path={`/games/:id`} render={(props) => <GameDetail {...props} />} />
+
+
+            <Route exact path="/search" component={() => <Search target={searchInput}/>} />
 
           </Switch>
         </div>
