@@ -1,21 +1,46 @@
+# React Project
+# (App_Name) | اسم التطبيق
+### Flower App
+# المقدمــة | Introduction 
+### The Flowers offers everything from individual flowers, to flower boxes and colorful bouquets.  What we like about this website is its straightforward approach.  
+# Project 
 
-<div dir='rtl'>
+- Doing component
+- Acess information using props
+- Update information using state
+- Using react-router-dom
+- using third-party authentication
+- Using CRUD 
+- Use life cycle
+- Using Hooks
+- Responsive UI 
 
-# Final Project | المشروع النهائي
 
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
+# Demo 
+<img src="https://f.top4top.io/p_1998td1w71.gif"/>
+
+### Tegnologie 
+ - HTML
+ - CSS
+ - JS
+ - Bootstrap 
+ - axios
+ -JSX
+ -Jison server
+ -Semantic UI
+
+ # Clone 
+ ```
+ git clone https://github.com/FatmahAlqhtany/FinalProject.git
+
+ git add .
+
+ git commit -m "first commit "
+
+ git push
+
  
+ ```
+### Author
 
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+- Fatimah alqhtany
