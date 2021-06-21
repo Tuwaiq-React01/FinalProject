@@ -25,9 +25,10 @@
  - JS
  - Bootstrap 
  - axios
- -JSX
- -Jison server
- -Semantic UI
+ - JSX
+ - Json server
+ - Semantic UI
+
 
  # Clone 
  ```
