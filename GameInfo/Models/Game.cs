@@ -18,6 +18,8 @@ namespace GameInfo.Models
         public int Rating { get; set; }
         public string Genre { get; set; }
 
+        public List<User_Game> User_Games { get; set; }
+
 
     }
 }

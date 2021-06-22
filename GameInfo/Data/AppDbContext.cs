@@ -12,7 +12,17 @@ namespace GameInfo.Data
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<User>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
+        }
+
         public DbSet<Game> Games { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<User_Game> User_Games { get; set; }
 
     }
 }

@@ -1,4 +1,5 @@
 using GameInfo.Data;
+using GameInfo.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -22,12 +23,13 @@ namespace GameInfo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections")));
 
 
             services.AddControllersWithViews();
-
+            services.AddScoped<JwtService>();
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -54,6 +56,18 @@ namespace GameInfo
             app.UseSpaStaticFiles();
 
             app.UseRouting();
+
+
+
+            app.UseCors(options => options
+                .WithOrigins(new[] { "https://localhost:3000" })
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials()
+                );
+
+
+
 
             app.UseEndpoints(endpoints =>
             {
