@@ -24,6 +24,13 @@ export default function App() {
   const [token, setToken] = useState("");
   const [email, setEmail] = useState("");
 
+  const logout = () =>{
+    localStorage.clear()
+    setName('');
+    setToken('');
+    setEmail('');
+  }
+
   const setInfo = (n, t, e) => {
     setName(n);
     setToken(t);
@@ -47,9 +54,9 @@ useEffect(() => {
 }, [name, token, email]);
 
 
-
   return (
     <>
+    
       <Router>
         <div>
           <nav
@@ -113,7 +120,7 @@ useEffect(() => {
                 
                 </form>
                 {token ? (
-                            <Link className="nav-link text-light" to="/logout">
+                            <Link className="nav-link text-light" to="/logout" onClick={logout}>
                             LOGOUT
                           </Link>
       ) : (
@@ -160,7 +167,7 @@ useEffect(() => {
 
             <Route
               path="/logout"
-              render={() => <HomePage />}
+              render={() => <HomePage setInfo={setInfo} />}
             />
 
             <Route exact path="/search" component={() => <Search target={searchInput}/>} />

@@ -10,6 +10,7 @@ export default function HomePage(props) {
 
         <h1 className="display-4">Welcome to GameLibrary!</h1>
       
+
       <Link to="/allgames">
         <button className="btn btn-primary">
           SHOW ALL GAMES! <AiOutlineArrowRight className="ms-2" />
