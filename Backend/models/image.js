@@ -13,7 +13,10 @@ const ImageSchema = new Schema({
     },
     description: String,
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-
+     addcomment:{
+        comment: [String],
+        user:[String],
+    },
     rate: {
         type: [Number],
         default: [5]

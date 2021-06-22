@@ -4,6 +4,8 @@ import EditIcon from '@material-ui/icons/Edit';
 import { motion } from 'framer-motion';
 import {  Container, Row, Col, Form, Alert } from 'react-bootstrap';
 import Button from '@material-ui/core/Button';
+import axios from 'axios'
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
 
 
@@ -11,8 +13,11 @@ export default function ImageCard(props) {
     
    
 
+
+
     const editclick = () => {
-        console.log("edit")
+        console.log("editttt ", props.item._id)
+       props.setSelectimage(props.item)
     }
     return (
         
@@ -23,7 +28,7 @@ export default function ImageCard(props) {
                 </div>
                 
                 <Button color="secondary" style={{marginTop:"-5em",marginLeft:"-13em"}} onClick={() => { props.deleteImage(props.item._id) }}><DeleteRoundedIcon /></Button>
-                <Button  color="primary" style={{marginTop:"-5em",marginLeft:"1em"}} onClick={editclick}>  <EditIcon  /></Button>
+                <Button  color="primary" style={{marginTop:"-5em",marginLeft:"1em"}} onClick={editclick} ><Link to="editimage" >  <EditIcon  /></Link></Button>
 
             </Col>
 

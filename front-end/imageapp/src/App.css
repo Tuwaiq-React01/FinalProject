@@ -45,6 +45,26 @@
 .myimage:hover{
   transition: 0.7s ease;
   opacity: 1;
+  transform: scale(1.07);
+}
+
+
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 6em;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    
 }
 
 

@@ -51,18 +51,20 @@ router.get("/", (req, res) => {
 
     // edit
     router.put("/EditImage/:imageId", (req, res) => {
+      console.log("lkfnc;ldckn")
         let imageId = req.params.imageId 
       //  let  password= req.body.password
        let  title= req.body.title
        let  image= req.body.image
        let  description= req.body.description
+       let  user=req.body.user
 
 
        console.log(title, " lkdl ", image)
        
 
        
-       Image.findByIdAndUpdate(imageId ,{title:title,image:image,description:description})
+       Image.findByIdAndUpdate(imageId ,{title:title,image:image,description:description,user:user})
               .then(editimage =>{
                 console.log(editimage)
                   res.json({msg : "Profile is editing", editimage})
@@ -108,6 +110,22 @@ router.get("/", (req, res) => {
               })
           .catch((err) => console.log("Error: User not found ", err));
             }
+  });
+
+  router.post("/AddComment/:imageId/:userid", (req, res) => {
+    let imageId = req.params.imageId
+  let userid = req.params.userid
+    let comment = req.body.comment
+    const addcomment= {
+      comment:comment,
+      user:userid
+    }
+  
+    Image.findByIdAndUpdate(imageId,{$push:{addcomment:addcomment}} )
+      .then(editUser => {
+        console.log("comment".comment)
+        res.json({ msg: "comment is added", comment })
+      })
   });
 
 

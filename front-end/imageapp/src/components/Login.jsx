@@ -50,7 +50,7 @@ export default function Login(props) {
             <Container style={{ marginTop: "5%", marginRight: "15%" }}>
                 <Row>
                     <Col>
-                        <img src="https://res.cloudinary.com/duuconncq/image/upload/v1623945347/ezgif.com-gif-maker_vxjd2j.gif" alt="" />
+                        <img src="https://res.cloudinary.com/duuconncq/image/upload/v1623945659/ezgif.com-gif-maker_1_gpsy0m.gif" alt="" />
                     </Col>
                     <Col>
                         {!error && (

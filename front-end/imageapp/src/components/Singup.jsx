@@ -149,7 +149,7 @@ if( password && email11 && confirmPassword1){
 
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>bio</Form.Label>
-                                <Form.Control as="textarea" placeholder="Enter your bio" rows={3} onChange={onChangeInput} />
+                                <Form.Control as="textarea" name="bio" placeholder="Enter your bio" rows={3} onChange={onChangeInput} />
                             </Form.Group>
 
                             {!password && (

@@ -17,7 +17,7 @@ const UserSchema = new Schema({
 
     image: {
         type: String,
-        default: "https://www.xovi.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png"
+        default: "https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png"
     },
 
     bio: {
