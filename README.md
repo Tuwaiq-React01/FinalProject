@@ -1,5 +1,4 @@
-<div dir="rtl" align="right" >
-  
+
 ![Tuwaiq](https://i.ibb.co/SV2BSn5/tuwaiq.png)
 
 ---
@@ -41,4 +40,4 @@ View, add, manipulate, and search for record of vulnerabilities and weaknesses f
 
 Abdulrahman Al-Maneea
 
-</div>
+
