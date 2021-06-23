@@ -26,8 +26,8 @@
 - Microsoft SQL Server 
 ### Set up  
  #### Database
- ``` dotnet ef database update```
- ``` npm install```
+ - ``` dotnet ef database update```
+ - ``` npm install```
 ### Front-End  
  - HTML
  - CSS
