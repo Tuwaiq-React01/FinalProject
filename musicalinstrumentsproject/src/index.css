@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+padding:0;
+font-family: sans-serif;
+background-color: black;
+}
+.navbar{
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+.container{
+  width: 80%;
+  margin: auto;
+
+}
+.logo{
+  text-decoration: none;
+  color:#fff;
+  font-size: 25px;
+  width: 30%;
+  float:left;
+  display: block;
+  margin: 10px 0;
+}
+ul{
+  width: 70%;
+  float: left;
+  padding: 0;
+  text-align: right;
+}
+ul a {
+  text-decoration: none;
+  color:rgb(27, 3, 3);
+  margin: 0 15px;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
