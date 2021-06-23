@@ -2,6 +2,8 @@ import Modal from "react-modal";
 import React, { useState, useEffect } from "react";
 import firebase from "firebase";
 import { Dropdown, DropdownButton } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
+
 export default function Index() {
   const db = firebase.firestore();
   var Movie = {
@@ -13,6 +15,7 @@ export default function Index() {
     poster_path: "",
   };
 
+  const history = useHistory();
   const [form, setForm] = useState(Movie);
   const [path, setPath] = useState("popular");
 
@@ -21,6 +24,7 @@ export default function Index() {
       .add(form)
       .then(function () {
         console.log("Value successfully written!");
+        history.goBack();
       })
       .catch(function (error) {
         console.error("Error writing Value: ", error);
@@ -113,8 +117,19 @@ export default function Index() {
             </Dropdown.Item>
           </DropdownButton>
         </div>
-        <button type="button" className="mt-4 rounded-lg" onClick={addMovie}>
-          Add post
+        <button
+          type="button"
+          className="btn btn-outline-danger m-4"
+          onClick={() => history.goBack()}
+        >
+          Back
+        </button>
+        <button
+          type="button"
+          className="btn btn-outline-success"
+          onClick={addMovie}
+        >
+          Add Movie
         </button>
       </div>
     </div>

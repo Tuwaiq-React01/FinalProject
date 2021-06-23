@@ -101,17 +101,17 @@ export default class App extends Component {
 
   render() {
     return (
-      <center>
+      <center className="app-screen align-self-center text-center">
         {this.state.token ? (
           <Home />
         ) : (
           <div>
-            <h1>Log In</h1>
             <FacebookLogin
               appId="3633847266720370"
               autoLoad={false}
               fields="name,email,picture"
               callback={this.responseFacebook}
+              cssClass="facebook"
             />
           </div>
         )}

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import firebase from "firebase";
 import { Dropdown, DropdownButton } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 export default function Index() {
   const db = firebase.firestore();
@@ -16,6 +17,7 @@ export default function Index() {
   };
   const { key } = useParams();
   const { path } = useParams();
+  const history = useHistory();
   const [form, setForm] = useState({});
   const [collectionPath, setCollectionPath] = useState("popular");
   useEffect(() => {
@@ -36,6 +38,19 @@ export default function Index() {
       .update(form)
       .then(() => {
         console.log("Updating successfuly");
+        history.goBack();
+      });
+  };
+  const DeleteMovie = () => {
+    db.collection(path)
+      .doc(key)
+      .delete()
+      .then(function () {
+        console.log("Value successfully Deleted!");
+        history.goBack();
+      })
+      .catch(function (error) {
+        console.error("Error writing Value: ", error);
       });
   };
   const handelTitle = (event) => {
@@ -127,8 +142,22 @@ export default function Index() {
             </Dropdown.Item>
           </DropdownButton>
         </div>
-        <button type="button" className="mt-4 rounded-lg" onClick={updateMovie}>
+        <button
+          type="button"
+          className="btn btn-outline-danger m-4"
+          onClick={() => history.goBack()}
+        >
+          Back
+        </button>
+        <button
+          type="button"
+          className=" rounded-lg btn btn-outline-success"
+          onClick={updateMovie}
+        >
           Edit
+        </button>
+        <button className="btn btn-outline-danger m-4" onClick={DeleteMovie}>
+          Delete
         </button>
       </div>
     </div>
