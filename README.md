@@ -45,7 +45,7 @@ in another port run
 
 ### Front-End
 - ReactJS 
-- HTML
+- JSX
 - CSS
 - useSound Hook
 - Semantic UI
