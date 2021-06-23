@@ -67,7 +67,7 @@ GameLibrary is a website where the user can visit and browse video games, add th
 
 ## Future updates and  iterations | التحديثات المستقبلية
 
-- **Homepage:**
+- **Homepage Improvements** 
 - **Overall better User Interface.**
 
 
