@@ -24,40 +24,40 @@ namespace GameInfo.Controllers
             _jwtService = jwtService;
         }
 
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<Game>>> GetGames()
-        //{
-        //    return await _context.Games.ToListAsync();
-        //}
-
-
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Game>>> GetGames()
         {
-            try
-            {
-                var jwt = Request.Cookies["jwt"];
-
-                var token = _jwtService.Verify(jwt);
-
-                int userId = int.Parse(token.Issuer);
-
-                var user = await _context.Users.FindAsync(userId);
-
-                var games = await _context.User_Games.Where(g => g.UserId == user.Id).Include(g => g.Game).ToListAsync();
-
-                if (games.Count < 1)
-                {
-                    return NotFound();
-                }
-
-                return Ok(games);
-            }
-            catch (Exception e)
-            {
-                return Unauthorized();
-            }
+            return await _context.Games.ToListAsync();
         }
+
+
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Game>>> GetGames()
+        //{
+        //    try
+        //    {
+        //        var jwt = Request.Cookies["jwt"];
+
+        //        var token = _jwtService.Verify(jwt);
+
+        //        int userId = int.Parse(token.Issuer);
+
+        //        var user = await _context.Users.FindAsync(userId);
+
+        //        var games = await _context.User_Games.Where(g => g.UserId == user.Id).Include(g => g.Game).ToListAsync();
+
+        //        if (games.Count < 1)
+        //        {
+        //            return NotFound();
+        //        }
+
+        //        return Ok(games);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return Unauthorized();
+        //    }
+        //}
 
         // /api/games/3
         [HttpGet("{id}")]
@@ -73,42 +73,42 @@ namespace GameInfo.Controllers
             return game;
         }
 
-        //// POST: api/games
-        //[HttpPost]
-        //public async Task<ActionResult<IEnumerable<Game>>> PostGame(Game game)
-        //{
-        //    _context.Games.Add(game);
-        //    await _context.SaveChangesAsync();
-        //    return await _context.Games.ToListAsync();
-        //}
-
-
         // POST: api/games
         [HttpPost]
         public async Task<ActionResult<IEnumerable<Game>>> PostGame(Game game)
         {
-
-
-            try
-            {
-                var jwt = Request.Cookies["jwt"];
-
-                var token = _jwtService.Verify(jwt);
-
-                int userId = int.Parse(token.Issuer);
-
-                var user = await _context.Users.FindAsync(userId);
-                User_Game toDB = new User_Game(){ Game = game, User = user };
-                _context.User_Games.Add(toDB);
-                await _context.SaveChangesAsync();
-
-                return Ok("added");
-            }
-            catch (Exception e)
-            {
-                return Unauthorized();
-            }
+            _context.Games.Add(game);
+            await _context.SaveChangesAsync();
+            return await _context.Games.ToListAsync();
         }
+
+
+        //// POST: api/games
+        //[HttpPost]
+        //public async Task<ActionResult<IEnumerable<Game>>> PostGame(Game game)
+        //{
+
+
+        //    try
+        //    {
+        //        var jwt = Request.Cookies["jwt"];
+
+        //        var token = _jwtService.Verify(jwt);
+
+        //        int userId = int.Parse(token.Issuer);
+
+        //        var user = await _context.Users.FindAsync(userId);
+        //        User_Game toDB = new User_Game(){ Game = game, User = user };
+        //        _context.User_Games.Add(toDB);
+        //        await _context.SaveChangesAsync();
+
+        //        return Ok("added");
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return Unauthorized();
+        //    }
+        //}
 
 
 
@@ -136,41 +136,41 @@ namespace GameInfo.Controllers
 
 
 
-        //[HttpDelete("{id}")]
-        //public async Task<ActionResult<IEnumerable<Game>>> DeleteGame(int id)
-        //{
-        //    var game = _context.Games.Find(id);
-        //    _context.Games.Remove(game);
-        //    await _context.SaveChangesAsync();
-
-        //    return await _context.Games.ToListAsync();
-        //}
-
-        //UNCOMPLETED
         [HttpDelete("{id}")]
         public async Task<ActionResult<IEnumerable<Game>>> DeleteGame(int id)
         {
-            try
-            {
-                var jwt = Request.Cookies["jwt"];
-                var token = _jwtService.Verify(jwt);
-                int userId = int.Parse(token.Issuer);
-                var user = await _context.Users.FindAsync(userId);
-                
-                var game = _context.Games.Find(id);
+            var game = _context.Games.Find(id);
+            _context.Games.Remove(game);
+            await _context.SaveChangesAsync();
 
-                var games = _context.User_Games.Where(g => g.UserId == user.Id).Include(g => g.Game).ToListAsync();
-                var target = _context.User_Games.FirstOrDefault(g => g.UserId == userId && g.GameId == id);
-                _context.User_Games.Remove(target);
-                await _context.SaveChangesAsync();
-
-                return Ok(games);
-            }
-            catch (Exception e)
-            {
-                return Unauthorized();
-            }
+            return await _context.Games.ToListAsync();
         }
+
+        //UNCOMPLETED
+        //[HttpDelete("{id}")]
+        //public async Task<ActionResult<IEnumerable<Game>>> DeleteGame(int id)
+        //{
+        //    try
+        //    {
+        //        var jwt = Request.Cookies["jwt"];
+        //        var token = _jwtService.Verify(jwt);
+        //        int userId = int.Parse(token.Issuer);
+        //        var user = await _context.Users.FindAsync(userId);
+
+        //        var game = _context.Games.Find(id);
+
+        //        var games = _context.User_Games.Where(g => g.UserId == user.Id).Include(g => g.Game).ToListAsync();
+        //        var target = _context.User_Games.FirstOrDefault(g => g.UserId == userId && g.GameId == id);
+        //        _context.User_Games.Remove(target);
+        //        await _context.SaveChangesAsync();
+
+        //        return Ok(games);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return Unauthorized();
+        //    }
+        //}
 
 
 

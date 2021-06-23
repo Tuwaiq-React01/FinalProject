@@ -25,11 +25,11 @@ export default function GameForm(props) {
 
     useEffect(() => {
         if(props.mode == "edit"){
-            setGameName(props.game.gameName)
-            setGameImage(props.game.image)
-            setGameDesc(props.game.description)
-            setRating(props.game.rating)
-            setGenre(props.game.genre)
+            setGameName(props.gameName)
+            setGameImage(props.image)
+            setGameDesc(props.description)
+            setRating(props.rating)
+            setGenre(props.genre)
         }
     }, [])
 
@@ -44,7 +44,7 @@ export default function GameForm(props) {
                 rating: rating,
                 genre: genre
             }
-            console.log("BEF GOING TO PARETN : ", game);
+            // console.log("BEF GOING TO PARETN : ", game);
 props.setGame(game)
         }
 

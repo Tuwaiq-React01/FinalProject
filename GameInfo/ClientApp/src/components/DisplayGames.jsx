@@ -6,9 +6,9 @@ export default function DisplayGames(props) {
     return (
       <div className="col-lg-3 col-md-4 col-sm-6 mt-5" key={i}>
         <div className="card text-white bg-dark" style={{ width: "18rem" }}>
-          <Link to={`/games/${ga.game.id}`}>
+          <Link to={`/games/${ga.id}`}>
             <img
-              src={ga.game.image}
+              src={ga.image}
               className="card-img-top"
               alt="game picture"
               width="200px"
@@ -16,12 +16,12 @@ export default function DisplayGames(props) {
             />{" "}
           </Link>
           <div className="card-body">
-            <h5 className="card-title"> {ga.game.gameName} </h5>
+            <h5 className="card-title"> {ga.gameName} </h5>
             <p className="card-text">
               {/* <Link to={`/games/${ga.id}`}> details </Link> */}
             </p>
           </div>
-          <button className="btn btn-danger" onClick={() => props.deleteGame(ga.game.id)} >
+          <button className="btn btn-danger" onClick={() => props.deleteGame(ga.id)} >
             DELETE
           </button>
         </div>
