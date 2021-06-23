@@ -1,0 +1,64 @@
+
+html body 
+{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1488926445368-4a98469fbe38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');
+  min-height: 100vh;
+}
+.welcome
+{
+  background-color: rgba(31, 29, 29, 0.734);
+  text-align: center;
+  font-size: 90px;
+  color:darkred;
+  margin-top: 350px;
+}
+.Get
+{
+  background-color: rgb(24, 22, 22);
+  color: rgb(255, 255, 255);
+}
+.img
+{
+height: 300px;
+width: 400px;
+padding-top: 20px;
+margin-left: 450px;
+
+}
+.Firstrow
+{
+  padding-left: 600px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+.Secondrow
+{
+padding-left: 540px;
+padding-bottom: 30px;
+}
+.add
+{
+  background-color: rgba(31, 29, 29, 0.885);
+  padding-left: 550px;
+  color: rgb(255, 255, 255);
+  margin-top: 270px;
+
+}
+.update
+{
+  background-color: rgba(31, 29, 29, 0.734);
+  padding-left: 550px;
+  color: rgb(255, 255, 255);
+  margin-top: 270px;
+
+}
+.btn
+{
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
