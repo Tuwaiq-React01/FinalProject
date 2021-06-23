@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  flex: 1 0 auto;
+}
+    
+h1 { font-family: Marvel; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; letter-spacing: 0.5px} 
+h3 { font-family: Marvel; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+p { font-family: Marvel; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
+blockquote { font-family: Marvel; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
+pre { font-family: Marvel; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+li { font-family: Marvel; font-size: 16px; font-style:normal; font-variant:normal; font-weight: 1700; line-height: 26.4px; letter-spacing: 0.5px } 
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ComicCard{
+  margin: 20px;
+}
+
+.ComicCard:hover{
+  box-shadow: 99px 9px 13px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+.carousel-caption {
+  display: none; 
+}
+}
