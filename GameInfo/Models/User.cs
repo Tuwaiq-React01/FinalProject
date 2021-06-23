@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace GameInfo.Models
@@ -12,6 +13,7 @@ namespace GameInfo.Models
         public string Username { get; set; }
         [Required]
         public string Email { get; set; }
+        [JsonIgnore]
         public string Password { get; set; }
 
 
