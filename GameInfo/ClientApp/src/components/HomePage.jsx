@@ -4,11 +4,12 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import FacebookLogin from "react-facebook-login";
 
 export default function HomePage(props) {
+  
+  
 
   return (
     <div className="container App">
-
-        <h1 className="display-4">Welcome to GameLibrary!</h1>
+      {props.user ? <h1 className="display-4">Welcome, {props.user}!</h1> : <h1 className="display-4">Welcome to GameLibrary!</h1>}
       
 
       <Link to="/allgames">

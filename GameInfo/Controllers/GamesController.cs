@@ -1,4 +1,5 @@
 ﻿using GameInfo.Data;
+using GameInfo.Helpers;
 using GameInfo.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,10 +16,12 @@ namespace GameInfo.Controllers
     public class GamesController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly JwtService _jwtService;
 
-        public GamesController(AppDbContext context)
+        public GamesController(AppDbContext context, JwtService jwtService)
         {
             _context = context;
+            _jwtService = jwtService;
         }
 
         [HttpGet]
@@ -27,6 +30,34 @@ namespace GameInfo.Controllers
             return await _context.Games.ToListAsync();
         }
 
+
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Game>>> GetGames()
+        //{
+        //    try
+        //    {
+        //        var jwt = Request.Cookies["jwt"];
+
+        //        var token = _jwtService.Verify(jwt);
+
+        //        int userId = int.Parse(token.Issuer);
+
+        //        var user = await _context.Users.FindAsync(userId);
+
+        //        var games = await _context.User_Games.Where(g => g.UserId == user.Id).Include(g => g.Game).ToListAsync();
+
+        //        if (games.Count < 1)
+        //        {
+        //            return NotFound();
+        //        }
+
+        //        return Ok(games);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return Unauthorized();
+        //    }
+        //}
 
         // /api/games/3
         [HttpGet("{id}")]
@@ -50,6 +81,34 @@ namespace GameInfo.Controllers
             await _context.SaveChangesAsync();
             return await _context.Games.ToListAsync();
         }
+
+
+        //// POST: api/games
+        //[HttpPost]
+        //public async Task<ActionResult<IEnumerable<Game>>> PostGame(Game game)
+        //{
+
+
+        //    try
+        //    {
+        //        var jwt = Request.Cookies["jwt"];
+
+        //        var token = _jwtService.Verify(jwt);
+
+        //        int userId = int.Parse(token.Issuer);
+
+        //        var user = await _context.Users.FindAsync(userId);
+        //        User_Game toDB = new User_Game(){ Game = game, User = user };
+        //        _context.User_Games.Add(toDB);
+        //        await _context.SaveChangesAsync();
+
+        //        return Ok("added");
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return Unauthorized();
+        //    }
+        //}
 
 
 
@@ -87,7 +146,31 @@ namespace GameInfo.Controllers
             return await _context.Games.ToListAsync();
         }
 
+        //UNCOMPLETED
+        //[HttpDelete("{id}")]
+        //public async Task<ActionResult<IEnumerable<Game>>> DeleteGame(int id)
+        //{
+        //    try
+        //    {
+        //        var jwt = Request.Cookies["jwt"];
+        //        var token = _jwtService.Verify(jwt);
+        //        int userId = int.Parse(token.Issuer);
+        //        var user = await _context.Users.FindAsync(userId);
 
+        //        var game = _context.Games.Find(id);
+
+        //        var games = _context.User_Games.Where(g => g.UserId == user.Id).Include(g => g.Game).ToListAsync();
+        //        var target = _context.User_Games.FirstOrDefault(g => g.UserId == userId && g.GameId == id);
+        //        _context.User_Games.Remove(target);
+        //        await _context.SaveChangesAsync();
+
+        //        return Ok(games);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return Unauthorized();
+        //    }
+        //}
 
 
 
