@@ -27,6 +27,7 @@
 ### Set up  
  #### Database
  ``` dotnet ef database update```
+ ``` npm install```
 ### Front-End  
  - HTML
  - CSS
