@@ -1,0 +1,14 @@
+.HeaderMain
+{
+    background-color: black;
+    color: white;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginLink
+{
+    margin-left: 3em
+}

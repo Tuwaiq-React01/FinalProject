@@ -1,0 +1,64 @@
+{
+    "devices": [
+      {
+        "id": "1",
+        "productName": "Apple Ipad Pro 11",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/4/547344.jpg?1",
+        "price": "4299 SAR"
+      },
+      {
+        "id": "2",
+        "productName": "Apple iPhone 12 Pro Max",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/556847.jpg?1",
+        "price": "4899 SAR"
+      },
+      {
+        "id": "3",
+        "productName": "Huawei MateBook D 14 Laptop",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/6/560815_1.jpg?1",
+        "price": "2999 SAR"
+      },
+      {
+        "id": "4",
+        "productName": "Apple MacBook Air 13 Retina Laptop",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/558440.jpg?1",
+        "price": "6199 SAR"
+      },
+      {
+        "id": "5",
+        "productName": "Samsung Galaxy S21+",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/559937.jpg?1",
+        "price": "3899 SAR"
+      },
+      {
+        "id": "6",
+        "productName": "Apple AirPods Pro Earbuds",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/3/537388.jpg?1",
+        "price": "949 SAR"
+      },
+      {
+        "id": "7",
+        "productName": "Apple iPad Pro 11 - 2021 Wi-Fi Tablet PC",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/6/563801.jpg?1",
+        "price": "3599 SAR"
+      },
+      {
+        "id": "8",
+        "productName": "Lenovo Legion 5 15IMH05H Gaming Laptop",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/4/548202_1.jpg?1",
+        "price": "5699 SAR"
+      },
+      {
+        "id": "9",
+        "productName": "HP Spectre x360 13-aw2002nx 2-in-1 Laptop - Convertible Folder",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/555540_1.jpg?1",
+        "price": "6999 SAR"
+      },
+      {
+        "id": "10",
+        "productName": "Microsoft Surface Book 3 2-in-1 Laptop - Detachable Keyboard Dock/Tablet",
+        "productImage": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/551270_2.jpg?1",
+        "price": "8999 SAR"
+      }
+    ]
+  }

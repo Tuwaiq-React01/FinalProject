@@ -1,0 +1,58 @@
+{
+  "devices": [
+    {
+      "id": "2",
+      "name": "Apple iPhone 12 Pro Max",
+      "image": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/556847.jpg?1",
+      "price": "4900"
+    },
+    {
+      "id": "3",
+      "name": "Huawei MateBook D 14 Laptop",
+      "image": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/6/560815_1.jpg?1",
+      "price": "2999"
+    },
+    {
+      "id": "4",
+      "name": "Apple MacBook Air 13 Retina Laptop",
+      "image": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/558440.jpg?1",
+      "price": "6199"
+    },
+    {
+      "id": "5",
+      "name": "Samsung Galaxy S21+",
+      "image": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/559937.jpg?1",
+      "price": "3899"
+    },
+    {
+      "id": "6",
+      "name": "Apple AirPods Pro Earbuds",
+      "image": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/3/537388.jpg?1",
+      "price": "949"
+    },
+    {
+      "id": "7",
+      "name": "Apple iPad Pro 11 - 2021 Wi-Fi Tablet PC",
+      "image": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/6/563801.jpg?1",
+      "price": "3599"
+    },
+    {
+      "id": "8",
+      "name": "Lenovo Legion 5 15IMH05H Gaming Laptop",
+      "image": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/4/548202_1.jpg?1",
+      "price": "5699"
+    },
+    {
+      "id": "9",
+      "name": "HP Spectre x360 13-aw2002nx 2-in-1 Laptop - Convertible Folder",
+      "image": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/555540_1.jpg?1",
+      "price": "6999"
+    },
+    {
+      "id": "10",
+      "name": "Microsoft Surface Book 3 2-in-1 Laptop - Detachable Keyboard Dock/Tablet",
+      "image": "https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=400/https://www.jarir.com/media//catalog/product/5/5/551270_2.jpg?1",
+      "price": "8999"
+    }
+  ]
+}
