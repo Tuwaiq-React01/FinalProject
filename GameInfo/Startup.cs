@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
 
 namespace GameInfo
 {
@@ -28,7 +29,17 @@ namespace GameInfo
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnections")));
 
 
+
             services.AddControllersWithViews();
+
+            services.AddControllers()
+                .AddNewtonsoftJson(
+                    options =>
+                    {
+                        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                    });
+
+
             services.AddScoped<JwtService>();
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

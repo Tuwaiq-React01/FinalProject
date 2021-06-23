@@ -1,4 +1,5 @@
 ﻿using GameInfo.Data;
+using GameInfo.Helpers;
 using GameInfo.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,18 +16,48 @@ namespace GameInfo.Controllers
     public class GamesController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly JwtService _jwtService;
 
-        public GamesController(AppDbContext context)
+        public GamesController(AppDbContext context, JwtService jwtService)
         {
             _context = context;
+            _jwtService = jwtService;
         }
+
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Game>>> GetGames()
+        //{
+        //    return await _context.Games.ToListAsync();
+        //}
+
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Game>>> GetGames()
         {
-            return await _context.Games.ToListAsync();
-        }
+            try
+            {
+                var jwt = Request.Cookies["jwt"];
 
+                var token = _jwtService.Verify(jwt);
+
+                int userId = int.Parse(token.Issuer);
+
+                var user = await _context.Users.FindAsync(userId);
+
+                var games = await _context.User_Games.Where(g => g.UserId == user.Id).Include(g => g.Game).ToListAsync();
+
+                if (games.Count < 1)
+                {
+                    return NotFound();
+                }
+
+                return Ok(games);
+            }
+            catch (Exception e)
+            {
+                return Unauthorized();
+            }
+        }
 
         // /api/games/3
         [HttpGet("{id}")]
