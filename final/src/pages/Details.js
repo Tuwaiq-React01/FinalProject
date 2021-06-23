@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Nav from '../components/Nav'
 import firebase from 'firebase';
-
+import useSound from 'use-sound';
+import { useHistory } from 'react-router-dom';
 let db = firebase.firestore();
 
 export default function Details(props) {
@@ -9,6 +10,18 @@ export default function Details(props) {
     const [topText, setTopText] = useState(meme.topText);
     const [bottomText, setBottomText] = useState(meme.bottomText);
     const [status, setStatus] = useState('')
+
+    const noURL = '../../sounds/noo.mp3';
+    const histrory = useHistory();
+    const [play, { stop }] = useSound(
+        noURL,
+        { volume: 0.5 }
+    );
+    const [playOk] = useSound(
+        '../../sounds/ok.mp3',
+        { volume: 0.5 }
+    );
+    const [ishovering, setishovering] = useState(false)
     useEffect(() => {
         getMemeDetails(props.location.state.id)
     }, [])
@@ -36,6 +49,8 @@ export default function Details(props) {
                 bottomText: bottomText
             }).then(() => {
                 setStatus('meme updated!')
+                histrory.push('/')
+
             });
     }
     const handleDelete = (e) => {
@@ -43,14 +58,15 @@ export default function Details(props) {
         db.collection("memes").doc(props.location.state.id)
             .delete().then(() => {
                 setStatus('meme deleted!')
+                histrory.push('/')
             });
     }
     return (
         <div>
-            <div>
+            <div className="relative z-10">
                 <Nav />
             </div>
-            <div className="sm:ml-32 mt-2 ml-2 text-gray-700">
+            <div className="md:ml-32 mt-2 ml-2 text-gray-700">
                 <div className="m-4 p-2 rounded-md shadow-sm border border-gray-100">
                     <h1 className="font-extrabold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500 mb-1">
                         Meme Details
@@ -75,14 +91,25 @@ export default function Details(props) {
                                     <input className="border-b border-gray-400 bg-gray-50 rounded" type="text" onChange={(e) => handleBottomText(e)} />
                                 </div>
                                 <div>
-                                    <input className="w-24 p-1 uppercase font-bold rounded-lg transform transition duration-300 ease-in-out hover:-rotate-6 text-white bg-gradient-to-r from-pink-400 to-blue-300" type="submit" value="edit" />
+                                    <input
+                                        onClick={playOk}
+                                        className="relative w-24 p-1 uppercase font-bold rounded-lg transform transition duration-300 ease-in-out hover:-rotate-6 text-white bg-gradient-to-r from-pink-400 to-blue-300" type="submit" value="edit" />
                                 </div>
                             </form>
                             <h1 className="font-extrabold text-xl text-gray-600 mb-1">
-                               Delete meme:
+                                Delete meme:
                             </h1>
                             <hr className="mb-3" />
-                            <button className="w-24 p-1 uppercase font-bold rounded-lg transform transition duration-300 ease-in-out hover:rotate-6 text-white bg-gradient-to-r from-pink-400 to-blue-300" onClick={handleDelete}>Delete</button>
+                            <button onMouseEnter={() => {
+                                setishovering(true);
+                                play();
+                            }}
+                                onMouseLeave={() => {
+                                    setishovering(false);
+                                    stop();
+                                }} className="relative w-24 p-1 uppercase font-bold rounded-lg transform transition duration-300 ease-in-out hover:rotate-6 text-white bg-gradient-to-r from-pink-400 to-blue-300" onClick={handleDelete}>
+                                <span ishovering={ishovering}>Delete</span>
+                            </button>
                             <h1 className="font-extrabold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500 mb-1">
                                 {status}
                             </h1>

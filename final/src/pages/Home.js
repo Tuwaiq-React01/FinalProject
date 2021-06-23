@@ -16,7 +16,7 @@ export default function Home() {
             })
     }, [])
     const cards = memes.map((item, i) => (
-        <div key={i} className="m-4 h-auto rounded-md overflow-hidden shadow-sm pb-1 md:w-3/4 md:m-auto">
+        <div key={i} className="m-2 h-auto rounded-md overflow-hidden shadow-md pb-1 md:w-1/2 md:m-auto">
 
             <img className="w-full" src={`https://apimeme.com/meme?meme=${item.fields.name.stringValue}&top=${item.fields.topText.stringValue}&bottom=${item.fields.bottomText.stringValue}`} />
             <div>
@@ -44,13 +44,13 @@ export default function Home() {
             <div>
                 <Nav />
             </div>
-            <div className="sm:ml-32 mt-2 ml-2 text-gray-700">
+            <div className="md:ml-32 mt-2 ml-2 text-gray-700">
                 <div className="m-4 p-2 rounded-md shadow-sm border border-gray-100">
                     <h1 className="font-extrabold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500 mb-1">
                         Created Memes
                     </h1>
                     <hr className="mb-3" />
-                    <div className="grid gap-4">
+                    <div className="grid  gap-2">
                         {cards}
                     </div>
                 </div>

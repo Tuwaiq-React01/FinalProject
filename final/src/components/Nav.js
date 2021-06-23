@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
+import { Popover, Transition } from '@headlessui/react'
+import Photo from '../components/Photo'
 export default class Nav extends Component {
 
     render() {
@@ -14,12 +16,34 @@ export default class Nav extends Component {
                         </Link>
                     </div>
                     <div className="md:p-5 p-3 delay-75 duration-500 ease-in-out transform hover:scale-125 hover:rotate-12">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                            </svg>
-                    </div>
 
-                    <div className="hover:shadow-md p-3 rounded-full duration-1000 ease-in-out transform hover:scale-125 delay-200 hover:rotate-180 text-3xl font-bold text-center bg-gradient-to-br from-purple-400 to-pink-300 md:p-5 ">
+                        <Popover className="relative">
+                            {({ open }) => (
+                                <>
+                                    <Popover.Button className={`${open ? '' : 'text-opacity-90'}`}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                                        </svg>
+                                    </Popover.Button>
+                                    <Transition
+                                        as={Fragment}
+                                        enter="transition ease-out duration-200"
+                                        enterFrom="opacity-0 translate-y-12"
+                                        enterTo="opacity-100 translate-y-0"
+                                        leave="transition ease-in duration-150"
+                                        leaveFrom="opacity-100 translate-y-0"
+                                        leaveTo="opacity-0 translate-y-1">
+                                        <Popover.Panel className="absolute w-36 -top-32 md:-top-2 md:ml-20 right-0 md:-right-36">
+                                            <div className="lowercase overflow-hidden p-1 bg-white text-xs font-normal text-gray-800 rounded-md shadow-md">
+                                                <Photo/>
+                                            </div>
+                                        </Popover.Panel>
+                                    </Transition>
+                                </>
+                            )}
+                        </Popover>
+                    </div>
+                    <div className="hover:shadow-md p-4 rounded-full duration-1000 ease-in-out transform hover:scale-125 delay-200 hover:rotate-180 text-3xl font-bold text-center bg-gradient-to-br from-purple-400 to-pink-300 md:p-5 ">
                         <Link style={{ textDecoration: 'none' }} to="/create">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -33,10 +57,33 @@ export default class Nav extends Component {
                             </svg>
                         </Link>
                     </div>
-                    <div className="md:p-5 p-3 delay-75 duration-500 ease-in-out transform hover:scale-125 hover:rotate-45">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                        </svg>
+                    <div className="md:p-5 p-3">
+                        <Popover className="relative">
+                            {({ open }) => (
+                                <>
+                                    <Popover.Button className={`${open ? '' : 'text-opacity-90'}`}>
+                                        <svg onClick={this.heart} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                        </svg>
+                                    </Popover.Button>
+                                    <Transition
+                                        as={Fragment}
+                                        enter="transition ease-out duration-200"
+                                        enterFrom="opacity-0 translate-y-12"
+                                        enterTo="opacity-100 translate-y-0"
+                                        leave="transition ease-in duration-150"
+                                        leaveFrom="opacity-100 translate-y-0"
+                                        leaveTo="opacity-0 translate-y-1">
+                                        <Popover.Panel className="absolute w-36 -top-8 md:-top-2 md:ml-20 right-0 md:-right-36">
+                                            <div className="lowercase overflow-hidden p-1 bg-white text-xs font-normal text-gray-800 rounded-md shadow-md">
+                                                made with <span className="text-red-600">❤️</span> by hanan
+                                            </div>
+                                        </Popover.Panel>
+                                    </Transition>
+                                </>
+                            )}
+                        </Popover>
+
                     </div>
 
                 </div>

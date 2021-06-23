@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Nav from '../components/Nav'
+import useSound from 'use-sound';
+import { useHistory } from 'react-router-dom';
 //import firebase from 'firebase';
 
 // Your web app's Firebase configuration
@@ -36,6 +38,12 @@ export default function Create() {
         'Grumpy-Cat-Star-Wars', 'Grumpy-Cat-Table', 'Grumpy-Cat-Top-Hat', 'Heavy-Breathing-Cat',
         'Hoody-Cat', 'Kyon-Face-Palm'
     ])
+    const [play] = useSound(
+        '../../sounds/ok.mp3',
+        { volume: 0.5 }
+    );
+    const histrory = useHistory();
+
     const onSubmit = (e) => {
         e.preventDefault();
         const id = firebase.firestore().collection('memes').doc().id
@@ -44,10 +52,10 @@ export default function Create() {
             name: image,
             topText: topText,
             bottomText: bottomText,
-            fontSize: fontSize,
         })
             .then(() => {
                 console.log("Document successfully written!");
+                histrory.push('/')
             })
             .catch((error) => {
                 console.error("Error writing document: ", error);
@@ -65,9 +73,7 @@ export default function Create() {
     const handleImageChange = (e) => {
         setImage(e.target.value)
     }
-    const handleFontSizeChange = (e) => {
-        setFontSize(e.target.value)
-    }
+
     const handleTopText = (e) => {
         setTopText(e.target.value)
     }
@@ -79,7 +85,7 @@ export default function Create() {
             <div>
                 <Nav />
             </div>
-            <div className="sm:ml-32 mt-2 ml-2 text-gray-700">
+            <div className="md:ml-32 mt-2 ml-2 text-gray-700">
                 <div className="m-4 p-2 rounded-md shadow-sm border border-gray-100 mb-20 md:mb-2">
                     <h1 className="font-extrabold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500 mb-1">Create A Meme</h1>
                     <hr className="mb-3" />
@@ -101,7 +107,9 @@ export default function Create() {
                                 {images}
                             </div>
                             <br />
-                            <input className="w-full md:mb-2 transition duration-300 ease-in-out transform hover:scale-90 hover:shadow-md mt-2 px-4 py-2 rounded-md bg-gradient-to-r from-pink-400 to-blue-300 uppercase text-white font-bold" type="submit" />
+                            <input
+                                onClick={play}
+                                className="w-full md:mb-2 transition duration-300 ease-in-out transform hover:scale-90 hover:shadow-md mt-2 px-4 py-2 rounded-md bg-gradient-to-r from-pink-400 to-blue-300 uppercase text-white font-bold" type="submit" />
                         </form>
                     </div>
                 </div>
