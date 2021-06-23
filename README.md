@@ -51,7 +51,7 @@
  in command line 
 
 ```
-git clone  
+git clone  https://github.com/TaifBinEid/FinalProject
 ```
 ```
 cd FinalProject
