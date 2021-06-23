@@ -30,28 +30,61 @@ Conference Room Manager (CRM)
 ### Demo  
   
   
+ 
+
+https://user-images.githubusercontent.com/82468827/123175202-0d617c00-d48a-11eb-9474-4b49353f9221.mp4
+
+
+ 
+ 
+ 
+ 
 ### Prerequisites
+ 
+ 
  React
 
   
 ### Set up  
+ 
+ 
 clone the repo
+ 
+ 
 ``` git clone ``` 
+ 
+ 
 ``` npm install ```
+ 
+ 
   
 ### Front-End  
+ 
+ 
  - HTML
  - CSS
  - JS
  - Jquery
  - Bootstrap 
   
+ 
  ### Author
+ 
+ 
 Mutaz Alajlan
+ 
+ 
 ### License & Resource
+ 
+ 
 BootstrapMade
+ 
+ 
 Facebook login
+ 
+ 
 Google Maps
+ 
 
 <div dir='rtl'>
 
