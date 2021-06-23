@@ -5,8 +5,10 @@
 
 ## Description | وصف
 Game based website for the known game "The Legend of Zelda: Breath of the Wild" were I display the game dish recipes and show how it can be made and what is their effects
+<br/>
+<div dir='rtl'>
 موقع مبني على اللعبة المعروفة بإسم "The Legend of Zelda: Breath of the Wild" أقوم فيه بعرض وصفات أطباق اللعبة وكيفية صناعتها وكيفية تأثيرها على الشخصية فاللعبة
-
+</div>
 
 ## Demo 
 <img src="https://media0.giphy.com/media/WtnzFct0uGLhs3XrrZ/giphy.gif?cid=790b7611c5efdf1d39237793b6f72787cdecd315d1f68c89&rid=giphy.gif&ct=g" alt="bookworm-demo" width=580>
@@ -15,6 +17,8 @@ Game based website for the known game "The Legend of Zelda: Breath of the Wild" 
 ## Set up  
 ### Prerequisites
 - VS Code
+- JavaScript package manager 
+- Git
 
 #### in the terminal
 ``` 
