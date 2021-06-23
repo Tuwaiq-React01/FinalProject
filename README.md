@@ -1,21 +1,33 @@
+# Social Media Web application
 
-<div dir='rtl'>
+### Introduction 
+Social Media website Where you can have your own channel and the ability to upload an image and can rate the photos of other users and add a comment,Also offer Discover random images.
 
-# Final Project | المشروع النهائي
+### Demo  
+[Demo Video](https://drive.google.com/file/d/1F760pWZmIpkxZqold4o7KsL2Bos5D0xH/view)
 
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
- 
 
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+### Images
+
+![](https://res.cloudinary.com/duuconncq/image/upload/v1624488822/Screenshot_2021-06-24_015005_mbz6vi.png)
+![](https://res.cloudinary.com/duuconncq/image/upload/v1624489391/Screenshot_2021-06-24_020229_pnrwuf.png)
+![](https://res.cloudinary.com/duuconncq/image/upload/v1624489390/Screenshot_2021-06-24_020248_kkuglo.png)
+![](https://res.cloudinary.com/duuconncq/image/upload/v1624488826/Screenshot_2021-06-24_015026_ajwyko.png)
+![](https://res.cloudinary.com/duuconncq/image/upload/v1624488825/Screenshot_2021-06-24_015045_yob4rh.png)
+![](https://res.cloudinary.com/duuconncq/image/upload/v1624488823/Screenshot_2021-06-24_015211_my1l5y.png)
+![](https://res.cloudinary.com/duuconncq/image/upload/v1624488826/Screenshot_2021-06-24_015248_dilfi7.png)
+
+### Front-End  
+ - React.Js
+ - CSS
+ - React-Bootstrap
+ - Material-UI
+
+
+### Back-End 
+ - Node.js
+ - Express.js
+ - MongoDB,Mongoose
+### Author
+ Abdulrahman Aljafar
+

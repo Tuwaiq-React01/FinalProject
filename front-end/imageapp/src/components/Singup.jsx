@@ -115,6 +115,7 @@ if( password && email11 && confirmPassword1){
                         <img src="https://res.cloudinary.com/duuconncq/image/upload/v1623945347/ezgif.com-gif-maker_vxjd2j.gif" alt="" />
                     </Col>
                     <Col>
+                    <h3 style={{marginBottom:"2em"}}>Sign Up</h3>
                         {!register && (
                             <Alert variant="danger">
                                 The email is already in use. Please change the email

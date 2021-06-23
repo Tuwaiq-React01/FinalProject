@@ -30,7 +30,7 @@ export default function NavBar(props) {
                                 <NavDropdown.Item href="/Profile">My profile <PersonIcon/> </NavDropdown.Item>
                                 
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item as={Link} to="/home" style={{color:"red"}} onClick={() => {
+                                <NavDropdown.Item as={Link} to="/" style={{color:"red"}} onClick={() => {
                                   console.log("Logging Out!");
                                   localStorage.removeItem("jwtToken");
                                   props.loginCallback();
