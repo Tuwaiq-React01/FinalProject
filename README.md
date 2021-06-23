@@ -1,21 +1,29 @@
 
-<div dir='rtl'>
+<div dir='rtl'></div>
 
-# Final Project | المشروع النهائي
+# Musical Instruments 
+<div align="center">
+<img src="https://a.top4top.io/p_2000can0h1.png"/>
+</div>
+
+  ## About
+  It is a web application that displays musical instruments and enables users to edit and delete as well as add new instruments.
+## Demo   
+  
+ <a href="https://s12.aconvert.com/convert/p3r68-cdx67/in33yaqp8m/MusicalGif.gif">Demo</a>
+
+## Built using
+### Front-End
+- CSS
+- React JS
+- Bootstrap
+### Back-End
+- Axios
+- Json server
+## Auther 
+### Shahad Alshehri 
+
+
 
   
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
  
-
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
