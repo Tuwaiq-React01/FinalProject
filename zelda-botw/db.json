@@ -168,7 +168,32 @@
         ]
       ],
       "id": "fyq1cd6"
+    },
+    {
+      "recipe_image": "https://www.zeldadungeon.net/wiki/images/c/ce/Fish-and-mushroom-skewer.png",
+      "recipe_name": "Hasty Fish and Mushroom Skewer",
+      "healing": "❤❤❤❤",
+      "effect": "Granting Movement Speed Duration For 2:00 minutes",
+      "ingredients": [
+        [
+          {
+            "image": "https://static.wikia.nocookie.net/zelda/images/0/01/Volfruit.png",
+            "name": "Voltfruit"
+          }
+        ]
+      ],
+      "id": "ft67cd6"
     }
+  ],
+  "images":[
+    "https://i.pinimg.com/originals/2e/e7/06/2ee706b4bcd6f744fd328be3b9ab8093.png",
+    "https://cdna.artstation.com/p/assets/images/images/005/233/168/large/fabian-rensch-breathofthewild-1300px.jpg?1489512358",
+    "https://cdn.lifestyleasia.com/wp-content/uploads/sites/5/2020/03/19104354/breath-of-the-wild-switch-deal.jpg",
+    "https://www.perfectly-nintendo.com/wp-content/uploads/2018/02/The-Legend-of-Zelda-Breath-of-the-Wild-800x400.jpg",
+    "https://i.redd.it/ar6dvyu49fk41.jpg",
+    "https://images.alphacoders.com/709/thumb-1920-709974.jpg"
+
+
   ],
   "sample": {
     "recipe_name": "",

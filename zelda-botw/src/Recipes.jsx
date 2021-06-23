@@ -28,7 +28,7 @@ const Recipes = () => {
             return (
 
                 <div class="column" key={i} >
-                    <div class="ui segment" style={{ backgroundColor: "#1b1c1d", color: "white", fontSize: "1.2em", height:"200px" }}>
+                    <div class="ui segment" style={{ backgroundColor: "#1b1c1d", color: "white", fontSize: "1.2em", minHeight:"210px" }}>
                         <div class="two column stackable centered ui grid" style={{ marginBottom: "8px" }}>
                             <div class="center middle aligned column ui">
 
@@ -39,7 +39,7 @@ const Recipes = () => {
                             </div>
                             <div class="ui column center middle aligned  ">
                                 <p style={{ padding: "5px", borderRadius: "3px", fontSize: "0.8em" }}> {recipe.effect}</p>
-                                <Link to={`recipes/edit/${recipe.id}`}class="mini ui icon red button">
+                                <Link to={`recipes/edit/${recipe.id}`} class="mini ui icon red button">
                                     <i class="pen square icon"></i>
                                 </Link>
                                 <button onClick={(e) => deleteRecipe(e, recipe.id)} class="mini ui icon green button">
@@ -47,10 +47,10 @@ const Recipes = () => {
                                 </button>
 
                             </div>
-                            <button class="ui labled icon button" id="recipe_name">
+                            <Link to={`recipes/${recipe.id}`} class="ui labled icon button" id="recipe_name">
                                 <i class="utensils icon"></i>
                                 <span> </span>{recipe.recipe_name}
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

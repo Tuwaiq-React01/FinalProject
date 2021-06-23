@@ -35,7 +35,8 @@ const EditRecipe = () => {
                                     <div class="two fields">
                                         <div class=" field">
                                             <label>Recipe name</label>
-                                            <input type="text" placeholder="Name" name="recipe_name" value={recipe.recipe_name} onChange={(e) => HandleChange(e.target.name, e)} />
+                                            <input type="text" placeholder="Name" name="recipe_name" 
+                                             onChange={(e) => HandleChange(e.target.name, e)} />
                                         </div>
                                         <div class=" field">
                                             <label>Recipe Image</label>

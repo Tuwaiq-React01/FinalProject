@@ -5,24 +5,24 @@ const Home = () => {
         <div>
             <div class="two column stackable ui centered grid" >
                 <div class="column">
-                <div class="ui segment" style={{ backgroundColor: "#bf1313", color: "white" }}>
+                    <div class="ui segment" style={{ backgroundColor: "#bf1313", color: "white" }}>
                         <h1>The Legend of Zelda: Breath of the Wild</h1>
                     </div>
                     <img class="ui huge bordered image" src="https://www.nintendo.com//content/dam/noa/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/the-legend-of-zelda-breath-of-the-wild-switch-hero.jpg" alt="botw_poster" />
 
-                    
 
-                    <div class="ui segment" style={{ backgroundColor: "white", color: "#1b1c1d", fontSize: "1.2em"}}>
+
+                    <div class="ui segment" style={{ backgroundColor: "white", color: "#1b1c1d", fontSize: "1.2em" }}>
                         <div class="two column stackable centered ui grid" style={{ marginBottom: "8px" }}>
 
                             <div class="column">
-                                <br/>
+                                <br />
                                 <strong>STEP INTO A WORLD OF ADVENTURE</strong> <br /><br />
                                 Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration, and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across vast fields, through forests, and to mountain peaks as you discover what has become of the kingdom of Hyrule in this stunning Open-Air Adventure. Now on Nintendo Switch, your journey is freer and more open than ever. Take your system anywhere, and adventure as Link any way you like.
                             </div>
                             <div class="column ui centered">
 
-                                <img class="ui medium image" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_490,q_auto,w_360/ncom/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/description-image?v=2021062212" alt="link"/>
+                                <img class="ui medium image" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_490,q_auto,w_360/ncom/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/description-image?v=2021062212" alt="link" />
 
                             </div>
                         </div>

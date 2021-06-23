@@ -7,6 +7,8 @@ import EditRecipe from './EditRecipe';
 import NavBar from './NavBar';
 import Home from './Home';
 import Recipes from './Recipes'
+import Gallary from './Gallary'
+import ShowRecipe from './ShowRecipe';
 function App() {
 
 
@@ -23,13 +25,13 @@ function App() {
         <EditRecipe/>
       </Route>
       <Route path="/recipes/:id">
-
+        <ShowRecipe/>
       </Route>
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/about">
-
+      <Route path="/gallary">
+        <Gallary/>
       </Route>
       <Route exact path="/recipes">
         <Recipes />

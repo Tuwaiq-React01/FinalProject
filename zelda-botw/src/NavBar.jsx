@@ -10,7 +10,7 @@ const MyNavBar = () => {
     const [selectedTap, setSelectedTap] = useState('home');
     const [play, { stop }] = useSound(
         soundUrl,
-        { volume: 0.5 }
+        { volume: 1.0 }
     );
 
     const handlePlay = (e) => {
@@ -77,13 +77,13 @@ const MyNavBar = () => {
                     </Link>)
                 }
 
-                {selectedTap === "about" ?
-                    (<Link to="/about" className="item active red">
-                        About
+                {selectedTap === "gallary" ?
+                    (<Link to="/gallary" className="item active red">
+                        Gallary
                     </Link>)
                     :
-                    (<Link to="/about" className="item " onClick={(e) => { setSelectedTap('about') }}>
-                        About
+                    (<Link to="/gallary" className="item " onClick={(e) => { setSelectedTap('gallary') }}>
+                        Gallary
                     </Link>)
                 }
                 {playing ?
