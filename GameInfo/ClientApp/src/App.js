@@ -5,53 +5,88 @@ import Footer from "./components/Footer";
 // import "./App.css";
 import HomePage from "./components/HomePage";
 import About from "./components/About";
+import Login from "./components/Login";
+import Register from "./components/Register";
 import Games from "./components/Games";
 import GameDetail from "./components/GameDetail";
 import AllGames from "./components/AllGames";
 import Search from "./components/Search";
-import FacebookLogin from "react-facebook-login";
+// import FacebookLogin from "react-facebook-login";
+import axios from 'axios';
 
 
 import { MdGames } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
 import { AiFillInfoCircle } from "react-icons/ai";
-
+import { FiLogOut } from "react-icons/fi";
 export default function App() {
 
   const [searchInput, setSearchInput] = useState('');
-  const [name, setName] = useState("");
-  const [token, setToken] = useState("");
-  const [email, setEmail] = useState("");
-
-  const logout = () =>{
-    localStorage.clear()
-    setName('');
-    setToken('');
-    setEmail('');
-  }
-
-  const setInfo = (n, t, e) => {
-    setName(n);
-    setToken(t);
-    setEmail(e);
-  };
-
-
-  
-  const responseFacebook = (response) => {
-    setName(response.name);
-    setEmail(response.email);
-    setToken(response.accessToken);
-};
-
+  const [user, setUser] = useState({})
+  const [name, setName] = useState('');
+  const [auth, setAuth] = useState(false);
 
 useEffect(() => {
-  setInfo(name, token, email);
+  console.log("CALLED");
+  axios.get('https://localhost:44384/api/user', {withCredentials: true})
+  .then(res => {
+    // console.log(res.data)
+    setUser(res.data);
+    setName(res.data.username);
+  })
+  .catch(err => {
+    console.error(err); 
+  })
   return () => {
     // cleanup
-  };
-}, [name, token, email]);
+  }
+}, [auth])
+
+const authFunction = () => {
+  setAuth(!auth)
+}
+
+const logout = () => {
+  axios.post('https://localhost:44384/api/logout', {withCredentials: true} )
+  .then(res => {
+    setUser({});
+    setName('');
+
+  })
+  .catch(err => {
+    console.error(err); 
+  })
+}
+
+
+
+  //*******************FACEBOOK AUTHENTICATION********************/
+  // const logout = () =>{
+  //   localStorage.clear()
+  //   setName('');
+  //   setToken('');
+  //   setEmail('');
+  // }
+
+  // const setInfo = (n, t, e) => {
+  //   setName(n);
+  //   setToken(t);
+  //   setEmail(e);
+  // };
+
+//   const responseFacebook = (response) => {
+//     setName(response.name);
+//     setEmail(response.email);
+//     setToken(response.accessToken);
+// };
+
+// useEffect(() => {
+//   setInfo(name, token, email);
+//   return () => {
+//     // cleanup
+//   };
+// }, [name, token, email]);
 
 
   return (
@@ -119,24 +154,26 @@ useEffect(() => {
                   </Link>
                 
                 </form>
-                {token ? (
-                            <Link className="nav-link text-light" to="/logout" onClick={logout}>
-                            LOGOUT
-                          </Link>
+
+                
+                {name ? (
+                  
+        <Link className="nav-link text-light" to="/login" onClick={logout}>
+        Logout <FiLogOut size={30} className="ml-2" /> 
+      </Link>
+                         
       ) : (
-        <center>
-          <FacebookLogin
-            appId="1947245272097728"
-            autoLoad={false}
-            fields="name,email,picture"
-            callback={responseFacebook}
-            textButton=" Login"
-            cssClass="my-facebook-button-class"
-            icon="fa-facebook"
-            width="10px"
-            className="btn btn-primary"
-          />
-        </center>
+        <div className="d-flex">
+
+
+        <Link className="nav-link text-light" to="/login">
+                Login
+              </Link>
+        
+              <Link className="nav-link text-light" to="/register">
+                Register
+              </Link>
+                  </div>
       )}
               </div>
             </div>
@@ -146,7 +183,7 @@ useEffect(() => {
             <Route
               exact
               path="/"
-              render={() => <HomePage setInfo={setInfo} />}
+              render={() => <HomePage user={user.username}/>}
             />
 
             <Route exact path="/allgames" component={() => <AllGames />} />
@@ -165,10 +202,16 @@ useEffect(() => {
 
             <Route exact path={`/games/:id`} render={(props) => <GameDetail {...props} />} />
 
+
+            <Route exact path="/login" component={() => <Login auth={authFunction}/>} />
+            <Route exact path="/register" component={() => <Register />} />
+
+
+{/* 
             <Route
               path="/logout"
-              render={() => <HomePage setInfo={setInfo} />}
-            />
+              render={() => <HomePage />}
+            /> */}
 
             <Route exact path="/search" component={() => <Search target={searchInput}/>} />
 
