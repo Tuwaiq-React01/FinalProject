@@ -1,0 +1,93 @@
+.hoverMe{
+    background: #191919;
+    transition: all .2s ease;
+    /*transform: scale(1.02);*/
+}
+.hoverMe:hover {
+    background: #680000;
+    transform: scale(1.05);
+}
+
+.mySearchBtn {
+    background: #680000;
+    color: #fff;
+    transition: all .2s ease;
+}
+.mySearchBtn:hover {
+    background: #680000;
+    transform: scale(1.2);
+}
+.myActionBtn {
+    
+    color: #fff;
+    transition: all .2s ease;
+}
+.myActionBtn:hover {
+    
+    transform: scale(1.2);
+}
+
+.neonText {
+    
+    color: #fff;
+    text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #680000,
+            0 0 82px #680000,
+            0 0 92px #680000,
+            0 0 102px #680000,
+            0 0 151px #680000;
+}
+
+h1.neonText {
+    /*margin: 500px;*/
+    text-align: center;
+    margin: 50px auto 30px auto ;
+    width: 600px;
+    font-size: 4.5rem;
+    animation: pulsate 1.5s infinite alternate;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #680000,
+    0 0 0.8rem #680000,
+    0 0 2.8rem #680000,
+    inset 0 0 1.3rem #680000;
+}
+
+@keyframes pulsate {
+
+    100% {
+
+        text-shadow: 0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #680000,
+        0 0 80px #680000,
+        0 0 90px #680000,
+        0 0 100px #680000,
+        0 0 150px #680000;
+
+    }
+
+    0% {
+
+        text-shadow: 0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #680000,
+        0 0 45px #680000,
+        0 0 55px #680000,
+        0 0 70px #680000,
+        0 0 80px #680000;
+
+    }
+}
+
+.rad {
+    border-radius: 2rem;
+}
