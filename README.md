@@ -9,7 +9,6 @@
 
  Live Demo: [Click Here](https://abdulmajeed-almaymuni.github.io/FinalProject/)
   
-  Note: Live Demo Currently has a bug and is not working. I'm working on a way to fix it.
 ### Demo  
  ![Demo](./Bloggy.gif)
   

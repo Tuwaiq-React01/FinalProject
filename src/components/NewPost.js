@@ -25,7 +25,7 @@ const NewPost = () => {
             </div>
             <div className="btn-group-vertical w-25 mx-auto">
                 <button className="btn btn-success" onClick={() => location.data.addPost(createPost)}>Create Post</button>
-                <Link to="/" className="btn btn-primary">Back</Link>
+                <Link to="/FinalProject" className="btn btn-primary">Back</Link>
             </div>
             
         </div>

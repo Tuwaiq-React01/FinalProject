@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Post = (props) => {
     const history = useHistory();
     const editPost = () => {
-        history.push(`/Blog/Post/Edit/${props.post.id}`)
+        history.push(`/FinalProject/Blog/Post/Edit/${props.post.id}`)
     }
     return (
         <div className="col-4 mt-5">
@@ -15,7 +15,7 @@ const Post = (props) => {
                     <h5 className="card-title text-truncate">{props.post.title}</h5>
                     <p className="card-text text-truncate">{props.post.body}</p>
                     <div className="btn-group">
-                        <Link to={`/Blog/Post/${props.post.id}`} className="btn btn-primary">View</Link>
+                        <Link to={`/FinalProject/Blog/Post/${props.post.id}`} className="btn btn-primary">View</Link>
                         <button onClick={editPost} className="btn btn-warning">Edit</button>
                         <button onClick={props.deletePost} className="btn btn-danger">Delete</button>
                     </div>

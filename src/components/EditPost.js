@@ -32,7 +32,7 @@ const EditPost = (props) => {
         axios.put(`/posts/${index + 1}`)
             .then(res => {
                 console.log(res)
-                history.push("/")
+                history.push("/FinalProject")
             }).catch(err => {
                 console.log(err)
             })
@@ -52,7 +52,7 @@ const EditPost = (props) => {
             </div>
             <div className="btn-group-vertical w-25 mx-auto">
                 <button className="btn btn-warning" onClick={editPost}>Edit Post</button>
-                <Link to="/" className="btn btn-primary">Back</Link>
+                <Link to="/FinalProject" className="btn btn-primary">Back</Link>
             </div>
 
         </div>

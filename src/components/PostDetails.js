@@ -31,7 +31,7 @@ const PostDetails = (props) => {
                 <h2>Title: {post.title}</h2>
                 <p className="mt-5 fs-3">Body:</p>
                 <p className="fs-3">{post.body}</p>
-                <Link to="/" className="btn btn-primary w-50 mx-auto">Back</Link>
+                <Link to="/FinalProject" className="btn btn-primary w-50 mx-auto">Back</Link>
             </div>
         </div>
     )

@@ -22,7 +22,7 @@ const Blog = (props) =>  {
      post.id = tmpPosts[tmpPosts.length-1].id + 1;
      tmpPosts.push(post);
      props.setPosts(tmpPosts);
-     history.push("/")
+     history.push("/FinalProject")
     axios.post(`/posts`)
     .then(res => {
         console.log(res)
@@ -38,7 +38,7 @@ const Blog = (props) =>  {
    axios.delete(`/posts/${post.id}`)
    .then(res => {
        console.log(res)
-       history.push("/")
+       history.push("/FinalProject")
    }).catch(err => {
        console.log(err)
    })
@@ -53,7 +53,7 @@ const Blog = (props) =>  {
     return (
         <div className="row container mx-auto">
             <Link to={{
-                pathname:"/Blog/CreatePost",
+                pathname:"/FinalProject/Blog/CreatePost",
                 data: {
                     addPost:addPost
                 }
