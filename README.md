@@ -9,6 +9,8 @@
 
  Live Demo: [Click Here](https://abdulmajeed-almaymuni.github.io/FinalProject/)
   
+ Note: There is a bug in Live demo where the path for API request is wrong. Currently the only way to run the project is locally.
+  
 ### Demo  
  ![Demo](./Bloggy.gif)
   
