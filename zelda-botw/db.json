@@ -162,27 +162,141 @@
       "ingredients": [
         [
           {
-            "image": "https://static.wikia.nocookie.net/zelda/images/0/01/Volfruit.png",
-            "name": "Voltfruit"
+            "image": "https://www.zeldadungeon.net/wiki/images/d/d7/Hylian_Shroom.png",
+            "name": "Hylian Shroom"
+          }
+        ],
+        [
+          {
+            "image":"https://static.wikia.nocookie.net/zelda/images/b/ba/Breath_of_the_Wild_Fish_%28Bass%29_Hearty_Bass_%28Icon%29.png",
+            "name": "Any Fish"
+          }
+        ],
+        [
+          {
+            "image":"https://www.zeldadungeon.net/wiki/images/e/eb/Rushroom.png",
+            "name": "Rushroom"
           }
         ]
       ],
       "id": "fyq1cd6"
     },
     {
-      "recipe_image": "https://www.zeldadungeon.net/wiki/images/c/ce/Fish-and-mushroom-skewer.png",
-      "recipe_name": "Hasty Fish and Mushroom Skewer",
-      "healing": "❤❤❤❤",
-      "effect": "Granting Movement Speed Duration For 2:00 minutes",
+      "recipe_image": "https://static.wikia.nocookie.net/zelda/images/c/c6/Breath_of_the_Wild_Food_Dish_%28Rice_Balls%29_Meaty_Rice_Balls_%28Icon%29.png",
+      "recipe_name": "Energizing Meaty Rice Balls",
+      "healing": "❤❤❤❤❤❤❤❤",
+      "effect": "Recovers Stamina",
       "ingredients": [
         [
           {
-            "image": "https://static.wikia.nocookie.net/zelda/images/0/01/Volfruit.png",
-            "name": "Voltfruit"
+            "image": "https://static.wikia.nocookie.net/zelda/images/3/38/Breath_of_the_Wild_Meat_Raw_Meat_%28Icon%29.png",
+            "name": "Raw Meat"
+          }
+        ],
+        [
+          {
+            "image":"https://static.wikia.nocookie.net/zelda/images/e/e1/Breath_of_the_Wild_Cooking_Ingredients_Hylian_Rice_%28Icon%29.png",
+            "name":"Hylian Rice"
+          }
+        ],
+        [
+          {
+            "image":"https://static.wikia.nocookie.net/zelda/images/0/03/Breath_of_the_Wild_Cooking_Ingredient_Courser_Bee_Honey_%28Icon%29.png",
+            "name":"Courser Bee Honey"
           }
         ]
       ],
-      "id": "ft67cd6"
+      "id": "ft67v46"
+    },
+    {
+      "id":"kw39Sw",
+      "recipe_name": "Sneaky Elixir",
+      "recipe_image": "https://static.wikia.nocookie.net/zelda/images/f/fa/Breath_of_the_Wild_Potions_Sneaky_Elixir_%28Icon%29.png",
+      "healing": "–",
+      "effect": "Increases Stealth",
+      "ingredients": [
+        [
+          {
+            "name": "Any Monster Part",
+            "image": "https://www.zeldadungeon.net/wiki/images/f/f7/BokoblinFang.png"
+          }
+        ],
+        [
+          {
+            "name": "Sunset Firefly",
+            "image": "https://www.zeldadungeon.net/wiki/images/c/c1/Sunset-firefly.png"
+          }
+        ]
+      ]
+    },
+    {
+      "id":"3r3rcr",
+      "recipe_name": "Electro Elixir",
+      "recipe_image": "https://static.wikia.nocookie.net/zelda/images/5/5b/Breath_of_the_Wild_Potions_Electro_Elixir_%28Icon%29.png",
+      "healing": "–",
+      "effect": "Granting Electricity Resistance duration For 5:40 minutes",
+      "ingredients": [
+        [
+          {
+            "name": "Any Monster Part",
+            "image": "https://www.zeldadungeon.net/wiki/images/f/f7/BokoblinFang.png"
+          }
+        ],
+        [
+          {
+            "name": "Yellow Lizalfos Tail",
+            "image": "https://www.zeldadungeon.net/wiki/images/2/29/Yellow_Lizalfos_Tail.png"
+          }
+        ]
+      ]
+    },
+    {
+      "id":"r33f9w",
+      "recipe_name": "Fireproof Elixir",
+      "recipe_image": "https://static.wikia.nocookie.net/zelda/images/5/55/Fireproof_elixir.png",
+      "healing": "–",
+      "effect": "Grants Fireproof Buff",
+      "ingredients": [
+        [
+          {
+            "name": "Fireproof Animal",
+            "image": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0a/BotW_Fireproof_Lizard_Icon.png"
+          }
+        ],
+        [
+          {
+            "name": "Any Monster Part",
+            "image": "https://www.zeldadungeon.net/wiki/images/f/f7/BokoblinFang.png"
+          }
+        ]
+      ]
+    },
+    {
+      "id":"m7ns329",
+      "recipe_name": "Mighty Monster Stew",
+      "recipe_image": "https://static.wikia.nocookie.net/zelda/images/1/1b/Breath_of_the_Wild_Monster_Food_Dish_Monster_Stew_%28Icon%29.png",
+      "healing": "❤❤❤❤❤❤❤❤❤",
+      "effect": "Grants a high-level attack-power boost duration for 10:00 minutes",
+      "ingredients": [
+        [
+          {
+            "name": "Raw Prime Meat",
+            "image": "https://static.wikia.nocookie.net/zelda/images/3/3f/Breath_of_the_Wild_Meat_Raw_Prime_Meat_%28Icon%29.png"
+          }
+        ],
+        [
+          {
+            "name": "",
+            "image": ""
+          }
+        ],
+        [
+          {
+            "name": "",
+            "image": ""
+          }
+        ]
+      ]
     }
   ],
   "images":[
@@ -196,6 +310,7 @@
 
   ],
   "sample": {
+    "id":"",
     "recipe_name": "",
     "recipe_image": "",
     "healing": "",
