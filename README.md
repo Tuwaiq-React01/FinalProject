@@ -3,19 +3,27 @@
 
 # Final Project | المشروع النهائي
 
+  # Ezz Movies
+  
+  ## Description
+  
+  موقع لعرض الأفلام ويرتبها حسب الشهره والتقييم والقادمه مع امكانية تعديل البيانات واضافة افلام جديدة حسب القسم ومع امكانية حذفها
+  
+  ## Screenshotes
+  
+  ![image](https://user-images.githubusercontent.com/82456273/123153898-e21d6380-d46e-11eb-82f2-737cae566314.png)
+
+  ![image](https://user-images.githubusercontent.com/82456273/123153857-d5990b00-d46e-11eb-88bf-c225adfab9ec.png)
+  
+  ![image](https://user-images.githubusercontent.com/82456273/123154013-06794000-d46f-11eb-8477-e0810b45cdc0.png)
+
+  ![image](https://user-images.githubusercontent.com/82456273/123154069-14c75c00-d46f-11eb-9b19-df2826fbc7fe.png)
+
+  
   
   </div>
   
   
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
- 
-
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
+ <h1>Abdulaziz Almohammadi</h1>
   
   </div>
