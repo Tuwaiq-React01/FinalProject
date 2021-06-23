@@ -1,21 +1,28 @@
+<div dir="rtl" align="left" >
+  
+![Tuwaiq](https://i.ibb.co/SV2BSn5/tuwaiq.png)
+  
 
-<div dir='rtl'>
+----
 
-# Final Project | المشروع النهائي
+# (Students & Teachers DashBoard) 
+    
+### المقدمــة | Introduction 
+Students Dashboard system, a system that allows manager or admin to manage teachers and students. He/She can add, edit, delete and show throw the system.
+### Demo  
+  
+  ![9672b0bc395bfbaafd0e5dabb05f4dd95062eec3](https://user-images.githubusercontent.com/82483633/123117128-29ddc400-d44a-11eb-9d7c-ceec52cd450c.gif)
 
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
- 
+### Front-End  
+ - JSX
+ - CSS
+ - Material UI
+ - Bootstrap 
+### Back-End 
+ - Firebase API
 
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+
+### Author
+ Rawabe Ebrahim
+
+</div>
