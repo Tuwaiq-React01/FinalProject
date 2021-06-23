@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+.App {
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.upload, .download{
+  background-color: rgb(93 63 63 / 50%);
+  margin: auto;
+  padding: 25px 20px;
+  font-family: 'Kelly Slab', cursive;
+  width: 970px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clr1{
+  color: crimson;
+}
+
+.txt-center {
+  margin-left: 15px;
+  max-width: 464px;
+  text-align: center;
+}
+
+.postion-one{
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+.clr2{
+  color: cornsilk;
+  text-decoration: underline;
+}
+
+.clr3 {
+  color: salmon;
+}
+
+.p1{
+  font-size: 19px;
+  color: goldenrod;
+}
+
+.dropzone{
+  border: 2px dashed #a82e56;
+  text-align: center;
+  color: snow;
+  cursor: pointer;
+  height: 350px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+}
+
+.upload-right-section{
+  width: 430px;
+}
+
+.button-form {
+    padding: 5px 10px;
+    font-family: 'Kelly Slab';
+    background-color: #a82e56;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+.input-border{
+  border: 2px solid #a82e56;
+  border-radius: 7px;
+  padding: 5px 10px;
+  background-color: inherit;
+  outline: none;
+  color: white;
+  width: 200px;
+}
+
+.background{
+  position: absolute;
+  z-index: -1;
+}
+
+.upload-txt-center {
+  display: flex;
+  justify-content: space-around;
+  height: 350px;
+  align-items: center;
+  width: 482px;
+  overflow: hidden;
+}
+
+.RegisterForm{
+  background-color: rgb(93 63 63 / 50%);
+  width: 225px;
+  margin: auto;
+  padding: 25px 20px;
+  color: #a82e56;
+  font-family: 'Kelly Slab', cursive;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
