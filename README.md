@@ -2,7 +2,7 @@
 ## About
 React.js responsive web application where users can create and post memes, also they can browse others memes and edit or delete them.
 ## Demo
-![demo](https://github.com/hanan-tuwaiq/FinalProject/demo.gif)
+![demo](https://github.com/hanan-tuwaiq/FinalProject/blob/main/demo.gif)
 ## Technologies Used
 ### Front-end:
 - Javascript
