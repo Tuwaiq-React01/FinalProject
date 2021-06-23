@@ -1,21 +1,80 @@
+<div dir="rtl" align="right" >
 
-<div dir='rtl'>
+![Tuwaiq](https://i.ibb.co/SV2BSn5/tuwaiq.png)
 
-# Final Project | المشروع النهائي
 
+![alt text](https://github.com/aldundur-Mansour/FinalProject/blob/main/InductionLogo.svg?raw=true)
+
+# (INDUCTION) | اسم التطبيق
   
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
+### المقدمــة | Introduction 
  
+ تطبيق يسمح للمستخدمين بتحفيز بعضهم ومشاركة الحقائق حول اهتمام مشترك وقراءة كتاب بروتين محدد.
 
-<div dir='rtl'>
+### Demo  
+
+![alt text](https://github.com/aldundur-Mansour/FinalProject/blob/main/DemoFinalProject.gif?raw=true)
+
+
+---
+
+[LiveDemo => FrontEnd](https://dazzling-lamarr-86f006.netlify.app/)
+
+--- 
+
+[LiveDemo => Backend](https://induction2030.azurewebsites.net/index.html)
+
+---
+
+### Wireframe 
+
+![alt text](https://github.com/aldundur-Mansour/FinalProject/blob/main/Wireframe.jpg?raw=true)
+
+---
+
+### DB scheme 
+
+![alt text](https://github.com/aldundur-Mansour/FinalProject/blob/main/Relations-Induction.png?raw=true)
+
+---
+### Prerequisites
+- NET 5 
+- ASP.NET MVC
+- Microsoft SQL Server 
+- nodejs
+
+---
+
+### Set up  
+
+ #### Database
+
+ ``` dotnet ef database update```
+
+#### React App 
+
+``` npm i ```
+
+``` yarn start ```
+
+
+### Front-End  
+ - React with TypeScript
+ - Styled Component
   
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+
+### Back-End 
+ - ASP.NET MVC
+ - MSSQL Server
+ - EF Core
+
+--- 
+
+### Author
+
+#### Mansour Aldundur , AlSuda team 
+
+#### Team Leader : Ghada Almutairi
+
+
+</div>
