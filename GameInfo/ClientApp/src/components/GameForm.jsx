@@ -25,11 +25,12 @@ export default function GameForm(props) {
 
     useEffect(() => {
         if(props.mode == "edit"){
-            setGameName(props.gameName)
-            setGameImage(props.image)
-            setGameDesc(props.description)
-            setRating(props.rating)
-            setGenre(props.genre)
+            console.log("EDIT MODE");
+            setGameName(props.game.gameName)
+            setGameImage(props.game.image)
+            setGameDesc(props.game.description)
+            setRating(props.game.rating)
+            setGenre(props.game.genre)
         }
     }, [])
 

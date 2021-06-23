@@ -13,7 +13,7 @@ export default function DisplayGames(props) {
               alt="game picture"
               width="200px"
               height="300px"
-            />{" "}
+            />
           </Link>
           <div className="card-body">
             <h5 className="card-title"> {ga.gameName} </h5>
