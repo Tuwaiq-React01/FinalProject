@@ -1,21 +1,25 @@
 
-<div dir='rtl'>
+  ![Tuwaiq](https://i.ibb.co/SV2BSn5/tuwaiq.png)
+  ----
+  # Books Info
 
-# Final Project | المشروع النهائي
-
+### فكرة المشروع| Project Idea
+   Firebase API على قاعدة بيانات باستخدام CRUD موقع بسيط يطبق مفهوم عمليات 
+  ### Demo  
+  ![alt text](https://i.ibb.co/pXM2MtC/mywebsite2.gif)
+  ### Set up Prerequisites
+  - node js
+  ### Set up  
+   #### Dependencies installation
+   ``` npm install```
+  ### Front-End  
+   - HTML
+   - CSS
+   - React
+   - JS
+   - Bootstrap 
+  ### Back-End 
+   - Firebase
   
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
- 
-
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+  ### By
+    Saud Alshammari
