@@ -1,0 +1,199 @@
+{
+    "recipes": [
+      {
+        "id": "ran544",
+        "recipe_name": "Veggie Cream Soup",
+        "recipe_image": "https://static.wikia.nocookie.net/zelda/images/7/7b/Breath_of_the_Wild_Food_Dish_%28Soup%29_Veggie_Cream_Soup_%28Icon%29.png",
+        "healing": "❤❤",
+        "effect": "Granting Movement Speed Duration For 3:20 minutes",
+        "ingredients": [
+          [
+            {
+              "name": "Any Carrot",
+              "image": "https://static.wikia.nocookie.net/zelda/images/a/a4/Breath_of_the_Wild_Vegetables_%28Carrots%29_Swift_Carrot_%28Icon%29.png"
+            },
+            {
+              "name": "Fortified Pumpkin",
+              "image": "https://static.wikia.nocookie.net/zelda/images/a/a7/Fortifiedpumpkin.png"
+            }
+          ],
+          [
+            {
+              "name": "Fresh Milk",
+              "image": "https://static.wikia.nocookie.net/zelda/images/e/e1/Breath_of_the_Wild_Milk_%28Cooking_Ingredient%29_Fresh_Milk_%28Icon%29.png"
+            }
+          ],
+          [
+            {
+              "name": "Rock Salt",
+              "image": "https://static.wikia.nocookie.net/zelda/images/3/32/Breath_of_the_Wild_Ore_%28Salt%29_Rock_Salt_%28Icon%29.png"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "g78ff",
+        "recipe_name": "Hearty Salmon Meunière",
+        "recipe_image": "https://static.wikia.nocookie.net/zelda/images/6/60/Breath_of_the_Wild_Food_Dishes_Salmon_Mueni%C3%A8re_%28Icon%29.png",
+        "healing": "❤ Full Recovery ",
+        "effect": "Granting Temporary ❤❤❤❤",
+        "ingredients": [
+          [
+            {
+              "name": "Goat Butter",
+              "image": "https://static.wikia.nocookie.net/zelda/images/c/cb/Breath_of_the_Wild_Cooking_Ingredients_Goat_Butter_%28Icon%29.png"
+            }
+          ],
+          [
+            {
+              "name": "Tabantha Wheat",
+              "image": "https://static.wikia.nocookie.net/zelda/images/e/e1/Breath_of_the_Wild_Cooking_Ingredients_Tabantha_Wheat_%28Icon%29.png"
+            }
+          ],
+          [
+            {
+              "name": "Hearty Salmon",
+              "image": "https://static.wikia.nocookie.net/zelda/images/8/82/Breath_of_the_Wild_Fish_%28Salmon%29_Hearty_Salmon_%28Icon%29.png"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "45ffv",
+        "recipe_name": "Fish and Mushroom Skewer",
+        "recipe_image": "https://static.wikia.nocookie.net/zelda/images/a/a3/Breath_of_the_Wild_Food_Dish_%28Skewers%29_Fish_and_Mushroom_Skewer_%28Icon%29.png",
+        "healing": "❤❤❤",
+        "effect": "Recovers Stamina",
+        "ingredients": [
+          [
+            {
+              "name": "Any Fish",
+              "image": "https://static.wikia.nocookie.net/zelda/images/b/ba/Breath_of_the_Wild_Fish_%28Bass%29_Hearty_Bass_%28Icon%29.png"
+            }
+          ],
+          [
+            {
+              "name": "Any Mushroom",
+              "image": "https://static.wikia.nocookie.net/zelda/images/c/cb/Breath_of_the_Wild_Mushrooms_%28Energizing%29_Stamella_Shroom_%28Icon%29.png"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "1wdfef",
+        "recipe_name": "Spicy Pepper Steak",
+        "recipe_image": "https://static.wikia.nocookie.net/zelda/images/5/58/Spicy-pepper-steak.png",
+        "healing": "❤❤❤❤❤❤",
+        "effect": "Granting Cold Resistance Duration For 5:30 minutes",
+        "ingredients": [
+          [
+            {
+              "name": "Raw Meat",
+              "image": "https://static.wikia.nocookie.net/zelda/images/3/38/Breath_of_the_Wild_Meat_Raw_Meat_%28Icon%29.png"
+            }
+          ],
+          [
+            {
+              "name": "Hylian Shroom",
+              "image": "https://static.wikia.nocookie.net/zelda/images/c/c8/Hylian_shroom1.png"
+            }
+          ],
+          [
+            {
+              "name": "Spicy Pepper",
+              "image": "https://static.wikia.nocookie.net/zelda/images/2/2e/Spicy_pepper.png"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "wdwr2r",
+        "recipe_name": "Spicy Fruit and Mushroom Mix",
+        "recipe_image": "https://static.wikia.nocookie.net/zelda/images/8/83/Fruit-and-mushroom-mix.png",
+        "healing": "❤❤❤❤❤",
+        "effect": "Granting Cold Resistance Duration For 8:30 minutes",
+        "ingredients": [
+          [
+            {
+              "name": "Spicy Pepper 2x",
+              "image": "https://static.wikia.nocookie.net/zelda/images/2/2e/Spicy_pepper.png"
+            }
+          ],
+          [
+            {
+              "name": "Hylain Shroom 3x",
+              "image": "https://static.wikia.nocookie.net/zelda/images/c/c8/Hylian_shroom1.png"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "1sd",
+        "recipe_name": "Chilly Steamed Fish",
+        "recipe_image": "https://static.wikia.nocookie.net/zelda/images/6/6c/Breath_of_the_Wild_Food_Dish_%28Salt-Grilled%29_Salt-Grilled_Fish_%28Icon%29.png",
+        "healing": "❤❤❤❤❤",
+        "effect": "Granting Heat Resistance Duration For 12:30 minutes",
+        "ingredients": [
+          [
+            {
+              "name": "Hydromelon 3x",
+              "image": "https://static.wikia.nocookie.net/zelda/images/c/c6/Hyrdomelon.png"
+            }
+          ],
+          [
+            {
+              "name": "Cool Safflina",
+              "image": "https://static.wikia.nocookie.net/zelda/images/4/43/Cool_safflina.png"
+            }
+          ],
+          [
+            {
+              "name": "Chillfin Trout",
+              "image": "https://static.wikia.nocookie.net/zelda/images/1/1d/Breath_of_the_Wild_Fish_%28Trout%29_Chillfin_Trout_%28Icon%29.png"
+            }
+          ]
+        ]
+      },
+      {
+        "recipe_image": "https://www.zeldadungeon.net/wiki/images/c/ce/Fish-and-mushroom-skewer.png",
+        "recipe_name": "Hasty Fish and Mushroom Skewer",
+        "healing": "❤❤❤❤",
+        "effect": "Granting Movement Speed Duration For 2:00 minutes",
+        "ingredients": [
+          [
+            {
+              "image": "https://static.wikia.nocookie.net/zelda/images/0/01/Volfruit.png",
+              "name": "Voltfruit"
+            }
+          ]
+        ],
+        "id": "fyq1cd6"
+      }
+    ],
+    "sample": {
+      "recipe_name": "",
+      "recipe_image": "",
+      "healing": "",
+      "effect": "",
+      "ingredients": [
+        [
+          {
+            "name": "",
+            "image": ""
+          }
+        ],
+        [
+          {
+            "name": "",
+            "image": ""
+          }
+        ],
+        [
+          {
+            "name": "",
+            "image": ""
+          }
+        ]
+      ]
+    }
+  }

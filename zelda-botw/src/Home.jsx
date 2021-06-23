@@ -8,7 +8,7 @@ const Home = () => {
                 <div class="ui segment" style={{ backgroundColor: "#bf1313", color: "white" }}>
                         <h1>The Legend of Zelda: Breath of the Wild</h1>
                     </div>
-                    <img class="ui huge bordered image" src="https://www.nintendo.com//content/dam/noa/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/the-legend-of-zelda-breath-of-the-wild-switch-hero.jpg" />
+                    <img class="ui huge bordered image" src="https://www.nintendo.com//content/dam/noa/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/the-legend-of-zelda-breath-of-the-wild-switch-hero.jpg" alt="botw_poster" />
 
                     
 
@@ -22,7 +22,7 @@ const Home = () => {
                             </div>
                             <div class="column ui centered">
 
-                                <img class="ui medium image" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_490,q_auto,w_360/ncom/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/description-image?v=2021062212" />
+                                <img class="ui medium image" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_490,q_auto,w_360/ncom/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/description-image?v=2021062212" alt="link"/>
 
                             </div>
                         </div>
@@ -35,7 +35,7 @@ const Home = () => {
                         <div class="two column stackable centered ui grid" style={{ marginBottom: "8px" }}>
                             <div class="column ui centered">
 
-                                <img class="ui medium bordered image" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Eiji_Aonuma_at_E3_2013_%28cropped_2%29.png" />
+                                <img class="ui medium bordered image" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Eiji_Aonuma_at_E3_2013_%28cropped_2%29.png" alt="Eiji Aonuma" />
 
                             </div>
                             <div class="column">
