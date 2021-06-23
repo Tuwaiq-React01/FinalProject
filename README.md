@@ -1,7 +1,7 @@
 
   ![Tuwaiq](https://i.ibb.co/SV2BSn5/tuwaiq.png)
   ----
-  # Books Info
+  # Anime List
 
 ### فكرة المشروع| Project Idea
    Facebook باستخدام  Authintication بالاضافة الى الـ  Firebase API على قاعدة بيانات باستخدام CRUD موقع بسيط يطبق مفهوم عمليات 
