@@ -1,21 +1,71 @@
+#  Project 4 react 
+<div dir="rtl">
+<hr>
 
-<div dir='rtl'>
+## فكرة المشروع :
+موقع يعرض مجموعة من الكتب وتم تطبيق عمليات CRUD 
+ على Placeholder API حيث يعرض معلومات موظفين المكتبة ويمكن التعديل عليها وحذف الموظفين ، تم إستخدام Third-Party Authentication في تسجيل الدخول .
+</div>
 
-# Final Project | المشروع النهائي
+## Screenshot
+>home page 
 
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
+![alt text](./screenshots/homepage.png)
+>About page 
+
+![alt text](./screenshots/about.png)
+>Contact page 
+
+![alt text](./screenshots/contact.png)
+>Employee page 
+
+![alt text](./screenshots/emlist.png)
+
+>home page 
+![alt text](./screenshots/addnewemployee.png)
+
+
+### Set up  
+### Prerequisites
+- Visual Studio Code 
+- node js 
+### Set up  
+ #### react Library 
+ #### facebook Authentication
+ #### axios Library
  
 
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+### Front-End  
+ - HTML
+ - CSS
+ - JS
+ - Bootstrap 
+ - Material UI
+### Back-End 
+ - Java Script
+ - axios
+ 
+ 
+
+ ### How to Clone Project 
+ in command line 
+
+```
+git clone  
+```
+```
+cd FinalProject
+```
+```
+npm start
+```
+### Author
+Taif Bin Eid
+### License & Resource
+https://material-ui.com/ <br>
+https://getbootstrap.com/ <br>
+https://unsplash.com/ <br>
+https://jsonplaceholder.typicode.com/
+</div>
+
+
