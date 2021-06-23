@@ -1,23 +1,27 @@
 import logo from './logo.svg';
+import "bootswatch/dist/quartz/bootstrap.min.css";
 import './App.css';
-
+import Home from "./Home";
+import NavBar from "./NavBar";
+import React from "react";
+import "firebase/auth";
+import { transitions,types, positions, Provider as AlertProvider } from 'react-alert'
+import AlertTemplate from 'react-alert-template-basic'
+const options = {
+    // you can also just use 'bottom center'
+    position: positions.BOTTOM_RIGHT,
+    timeout: 5000,
+    offset: '30px',
+    // you can also just use 'scale'
+    transition: transitions.FADE,
+    type:types.SUCCESS
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <AlertProvider template={AlertTemplate} {...options}>
+        <Home/>
+        </AlertProvider>
     </div>
   );
 }

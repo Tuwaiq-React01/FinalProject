@@ -1,38 +1,117 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card1 {
+    margin-top: 6%; /* Added */
+}
+
+.img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card2 {
+    margin: 20px;
+}
+.google{
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
+.mytypebefore {
+    animation-name: mynumb;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+
+    margin: auto;
+    width: 100%;
+}
+
+
+@keyframes mynumb {
+    0% {
+        opacity: 0;
+        bottom: 0px;
+    }
+    100% {
+        display: none;
+        opacity: 1;
+        bottom: 50em;
+    }
+}
+
+@keyframes myAnimation {
+    0% {
+        opacity: 1;
+        right: 0;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+        right: 200px;
+    }
+}
+
+@keyframes myresult {
+    0% {
+        opacity: 0;
+        bottom: 0px;
+    }
+    100% {
+        display: none;
+        opacity: 1;
+        bottom: 30em;
+    }
+}
+
+.myresult {
+    display: block;
+    opacity: 0;
+    animation-name: myresult;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    position: relative
+}
+
+.mytypeafter {
+    animation-name: myAnimation;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    position: relative;
+    display:none
 }
