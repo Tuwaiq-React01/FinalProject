@@ -1,21 +1,22 @@
+# Memes Maker
+## About
+React.js responsive web application where users can create and post memes, also they can browse others memes and edit or delete them.
+## Demo
+![demo](https://github.com/hanan-tuwaiq/FinalProject/demo.gif)
+## Technologies Used
+### Front-end:
+- Javascript
+- React js
+- Tailwind css
+- Headless UI
+### Back-end:
+- Cloud Firestore API
+- Axios
 
-<div dir='rtl'>
+## Wireframes
+[wireframes here](https://www.figma.com/file/2rvIKsFVW9vzjQFiveWg7a/memes-maker-wireframes?node-id=0%3A1).
 
-# Final Project | المشروع النهائي
-
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
- 
-
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+## Credits
+#### Trainee: Hanan Hakami
+#### Supervisor: Mohammad Aljasser
+#### Team: Amala
