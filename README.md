@@ -7,7 +7,7 @@
 ### Introduction 
  Bloggy is a blog website where you can View, Create, Edit and Delete Posts.
 
- Live Demo: [Click Here](https://github.com/Abdulmajeed-Almaymuni/FinalProject)
+ Live Demo: [Click Here](https://abdulmajeed-almaymuni.github.io/FinalProject/)
 ### Demo  
  ![Demo](./Bloggy.gif)
   
