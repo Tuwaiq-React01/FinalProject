@@ -1,0 +1,11 @@
+.qoutes{
+    display: grid ;
+    grid-template-columns: repeat(4,25%); 
+}
+
+.card{
+    margin-bottom: 20px;
+}
+#forClick{
+    cursor: pointer;
+}
