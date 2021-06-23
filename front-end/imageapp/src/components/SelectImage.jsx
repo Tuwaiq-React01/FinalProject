@@ -7,7 +7,7 @@ import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-
+import CommentBox from './CommentBox'
 
 
 import axios from 'axios';
@@ -25,13 +25,19 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 export default function SelectImage(props) {
-    console.log(props.selectimage.title)
+    
     const [createimage, setcreateimage] = useState({})
     const [rating, setrating] = useState({})
     const classes = useStyles();
+    const [show, setShow] = useState(false)
+    const [comment, setComment] = useState([]);
+    const [selecti,setselecti]= useState(JSON.parse(localStorage.getItem('setSelectimage')))
+
+
+    console.log( selecti)
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/users/profile/${props.selectimage.user}`)
+        axios.get(`http://localhost:4000/api/users/profile/${selecti.user}`)
             .then(res => {
                 // console.log(props.data._id)
                 console.log(res.data)
@@ -56,7 +62,7 @@ export default function SelectImage(props) {
         
      
         console.log("before Axios" + rating)
-        axios.post(`http://localhost:4000/api/Image/addrating/${props.selectimage._id}`,{"rate":newrating})
+        axios.post(`http://localhost:4000/api/Image/addrating/${selecti._id}`,{"rate":newrating})
             .then((res) => {
                 console.log("res.data.user from profile update ",res)
             }) .catch((err) => console.log(err));
@@ -65,8 +71,34 @@ export default function SelectImage(props) {
 
     const SelectChannle = ()=>{
         props.setselectchannels(createimage)
+        localStorage.setItem('channel', JSON.stringify(createimage));
         console.log(createimage);
     }
+
+    const onChangeInput1 = ({ target: { name, value } }) => {
+        setComment({ ...comment, [name]: value });
+      };
+
+      const AddComment = (event) => {
+        event.preventDefault();
+        axios.post(`http://localhost:4000/api/Image/AddComment/${selecti._id}/${props.data._id}`, comment)
+            .then((res) => {
+                console.log("data", res)
+                // history.push(`/Allpodcast/:id/${podId}`);
+            })
+      }
+
+    const sh = () => {
+        setShow(true)
+     };
+
+
+     const allComment = selecti.addcomment.comment == 0 ? '' : selecti.addcomment.map((ele) => {
+        console.log("comment", ele)
+        return <CommentBox ele={ele}/>
+    })
+
+
 
     return (
         <div style={{ marginTop: "3em", color: "black" }} className="App">
@@ -74,8 +106,19 @@ export default function SelectImage(props) {
                 <Row>
                     <Col>
                         <Paper className={classes.paper}>
-                            <img src={props.selectimage.image} alt="" style={{ width: "550px", height: "550px" }} />
-
+                            <img src={selecti.image} alt="" style={{ width: "550px", height: "550px" }} />
+                            <div style={{textAlign:"left",marginTop:"2em"}}>
+                            <Button id="butt"onClick={sh} title="Add Comment">AddComment </Button>
+                            {show && <div>
+                                <div id="inputcomment" class="form-group"  style={{marginTop:"1em"}}>
+                                
+                                <textarea  class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add Comment..."
+                                    name="comment"
+                                    onChange={(e) => onChangeInput1(e)}></textarea>
+                                    <Button style={{marginTop:"1em"}} id="butt" title="Post Comment" onClick={(e) => AddComment(e)}>Send</Button></div>
+                                    </div>
+                            }
+                            </div>
                         </Paper>
                     </Col>
                     <Col style={{ color: "black", marginTop: "6em" }}>
@@ -95,14 +138,14 @@ export default function SelectImage(props) {
                             <Row>
                                 <Col >
 
-                                    <h5 > {props.selectimage.title}</h5>
+                                    <h5 > {selecti.title}</h5>
 
                                 </Col>
                                 <Col >
                                     <Rating
                                         name="hover-feedback"
 
-                                        value={calcAvrg(props.selectimage.rate)}
+                                        value={calcAvrg(selecti.rate)}
                                         precision={0.5}
                                         onChange={(event, newValue) => {
                                             console.log("Abdulrahman ", newValue, " ev ", event)
@@ -115,10 +158,10 @@ export default function SelectImage(props) {
                         </Container>
                         <div style={{ textAlign: "left", marginTop: "3em" }}>
                             <h5>Description : </h5>
-                            <h6>{props.selectimage.description}</h6>
+                            <h6>{selecti.description}</h6>
                         </div>
-
-
+                        <hr/>
+                        {allComment}
 
 
                     </Col>

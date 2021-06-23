@@ -8,12 +8,14 @@ import AddIcon from '@material-ui/icons/Add';
 
 export default function SelectChannels(props) {
     const [channnel, setchannel] = useState({})
+    const user = JSON.parse(localStorage.getItem('channel'));
+
     const [image, setimage] = useState([])
     const [loaduser, setloaduser] = useState(false)
     const [loadimages, setloadimages] = useState(false)
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/users/profile/${props.selectchannels._id}`)
+        axios.get(`http://localhost:4000/api/users/profile/${user._id}`)
             .then(res => {
                 // console.log(props.data._id)
                 console.log(res.data)
@@ -23,7 +25,7 @@ export default function SelectChannels(props) {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/Image/${props.selectchannels._id}`)
+        axios.get(`http://localhost:4000/api/Image/${user._id}`)
             .then(res => {
                 // console.log(props.data._id)
                 console.log(res.data.userimages)

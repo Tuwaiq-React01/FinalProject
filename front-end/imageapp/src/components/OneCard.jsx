@@ -24,6 +24,7 @@ export default function OneCard(props) {
     const selectimage =()=>{
         console.log("clkdnsdc")
         props.setSelectimage(props.item)
+        localStorage.setItem('setSelectimage', JSON.stringify(props.item));
     }
     return (
        
