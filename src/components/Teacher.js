@@ -29,12 +29,11 @@ function Teacher() {
 
     const [users, setUsers] = useState(usersData)
     useEffect(() => {
-        db.collection("teachers").get()
+        db.collection("teacher").get()
             .then(querySnapshot => {
                 querySnapshot.forEach((doc) => {
                     users.push(doc.data())
                 });
-                console.log("log", ...users)
                 setUsers([...users])
             })
         return () => {
@@ -44,7 +43,7 @@ function Teacher() {
 
     const addUser = (user) => {
         user.id = users.length
-        db.collection("teachers").add(user).then((docRef) => {
+        db.collection("teacher").add(user).then((docRef) => {
         }).catch((error) => {
             console.log("error", error);
         })
@@ -52,33 +51,35 @@ function Teacher() {
     }
 
     const deleteUser = async (id) => {
-        // const res = await db.collection('teachers').doc().delete();
 
-        db.collection("teachers").get()
-            .then(querySnapshot => {
-                querySnapshot.forEach((doc) => {
-                    db.collection("teachers").doc(doc.id).delete()
-                    console.log("delete", doc.id)
-
-                });
-                console.log("delete")
-            })
-
+        db.collection("teacher").where("id", "==", id).get()
+          .then(querySnapshot => {
+            querySnapshot.forEach((doc) => {
+              doc.ref.delete()    
+            });
+          })
+    
         setUsers(users.filter(user => user.id !== id))
-    }
+      }
 
     const [edit, setEditing] = useState(false)
     const initialFormState = { id: null, name: '', username: '' }
     const [currentUser, setCurrentUser] = useState(initialFormState)
 
     const editRow = (user) => {
-
         setEditing(true)
         setCurrentUser({ id: user.id, name: user.name, username: user.username })
     }
 
     const updateUser = (id, updatedUser) => {
-
+        console.log("updateUser")
+        db.collection("teacher").where("id", "==", updatedUser.id).get()
+          .then(querySnapshot => {
+            querySnapshot.forEach((doc) => {
+              doc.ref.set(updatedUser)
+              console.log("edited", doc.id)
+            });
+          })
         setEditing(false)
         setUsers(users.map((user) => (user.id === id ? updatedUser : user)))
     }
@@ -86,7 +87,7 @@ function Teacher() {
     return (
         <div className="container">
             <div className="row" >
-                <Grid item xs={12} md={5} lg={5}>
+                <Grid item md={4}>
                     <Paper className={classes.paper}>
                         {edit ?
                             (
@@ -105,7 +106,7 @@ function Teacher() {
                             )}
                     </Paper>
                 </Grid>
-                <Grid item xs={12} md={5} lg={7}>
+                <Grid item md={7}>
                     <Paper className={classes.paper}>
                         <h2>Teachers Table</h2>
                         <UserTable users={users} deleteUser={deleteUser} editRow={editRow} />

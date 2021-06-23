@@ -35,9 +35,7 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const classes = useStyles();
   const usersData = [
-    // { id: 1, name: 'Tania', username: 'floppydiskette' },
-    // { id: 2, name: 'Craig', username: 'siliconeidolon' },
-    // { id: 3, name: 'Ben', username: 'benisphere' },
+    { id: 0, name: '', username: '' },
   ]
 
   const [users, setUsers] = useState(usersData)
@@ -47,7 +45,6 @@ function App() {
         querySnapshot.forEach((doc) => {
           users.push(doc.data())
         });
-        console.log("log", ...users)
         setUsers([...users])
       })
     return () => {
@@ -65,13 +62,12 @@ function App() {
   }
 
   const deleteUser = async (id) => {
-    // const res = await db.collection('students').doc().delete();
 
-    db.collection("students").get()
+    db.collection("students").where("id", "==", id).get()
       .then(querySnapshot => {
         querySnapshot.forEach((doc) => {
-          db.collection("students").doc(doc.id).delete()
-          console.log("delete" , doc.id)
+          doc.ref.delete()
+          console.log("delete", doc.id)
 
         });
         console.log("delete")
@@ -85,13 +81,21 @@ function App() {
   const [currentUser, setCurrentUser] = useState(initialFormState)
 
   const editRow = (user) => {
-
     setEditing(true)
     setCurrentUser({ id: user.id, name: user.name, username: user.username })
   }
 
   const updateUser = (id, updatedUser) => {
+    console.log("updateUser")
+    db.collection("students").where("id", "==", updatedUser.id).get()
+      .then(querySnapshot => {
+        querySnapshot.forEach((doc) => {
+          doc.ref.set(updatedUser)
+          console.log("edited", doc.id)
 
+        });
+        console.log("edit")
+      })
     setEditing(false)
     setUsers(users.map((user) => (user.id === id ? updatedUser : user)))
   }
@@ -99,7 +103,7 @@ function App() {
   return (
     <div className="container">
       <div className="row" >
-        <Grid item xs={12} md={5} lg={5}>
+        <Grid item md={4}>
           <Paper className={classes.paper}>
             {edit ?
               (
@@ -118,7 +122,7 @@ function App() {
               )}
           </Paper>
         </Grid>
-        <Grid item xs={12} md={5} lg={7}>
+        <Grid item md={7}>
           <Paper className={classes.paper}>
             <h2>Students Table</h2>
             <UserTable users={users} deleteUser={deleteUser} editRow={editRow} />

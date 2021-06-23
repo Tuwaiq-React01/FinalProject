@@ -8,8 +8,19 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import AssignmentIcon from '@material-ui/icons/Assignment';
-import { Link } from 'react-router-dom'
+import LocalLibrary from '@material-ui/icons/LocalLibrary'
+import Dashbord from './Dashbord';
+import Login from './../Login';
+import Teacher from './Teacher';
+import Student from './App';
+
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 const logout = () => {
     localStorage.clear()
@@ -18,13 +29,13 @@ const logout = () => {
 export const mainListItems = (
     <div>
         <Link to="/" >
-        <ListItem button >
-            <ListItemIcon>
-                <DashboardIcon />
-            </ListItemIcon>
-            <ListItemText primary="Dashboard" />
-            
-        </ListItem>
+            <ListItem button >
+                <ListItemIcon>
+                    <DashboardIcon />
+                </ListItemIcon>
+                <ListItemText primary="Dashboard" />
+
+            </ListItem>
         </Link>
         <Link to="/student" > <ListItem button>
             <ListItemIcon>
@@ -32,19 +43,15 @@ export const mainListItems = (
             </ListItemIcon>
             <ListItemText primary="Students" />
         </ListItem> </Link>
-        <ListItem button>
-            <ListItemIcon>
-                <PeopleIcon />
-            </ListItemIcon>
-            <ListItemText primary="Teachers" />
-        </ListItem>
-        {/* <ListItem button>
-            <ListItemIcon>
-                <BarChartIcon />
-            </ListItemIcon>
-            <ListItemText primary="Reports" />
-        </ListItem> */}
-       <Link to="/Logout" onClick={logout}><ListItem button>
+        <Link to="/teacher">
+            <ListItem button>
+                <ListItemIcon>
+                    <LocalLibrary />
+                </ListItemIcon>
+                <ListItemText primary="Teachers" />
+            </ListItem>
+        </Link>
+        <Link to="/Logout" onClick={logout}><ListItem button>
             <ListItemIcon>
                 <ExitToAppIcon />
             </ListItemIcon>

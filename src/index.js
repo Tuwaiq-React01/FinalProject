@@ -6,19 +6,26 @@ import reportWebVitals from './reportWebVitals';
 import Dashbord from './components/Dashbord';
 import Login from './Login';
 import Teacher from './components/Teacher';
-import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
+import Student from './components/App';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 ReactDOM.render(
-<Router>
+  <Router>
+    <Login />
+    {/* <Switch>
+      <Route path="/dashbord">
+        <Dashbord />
+      </Route>
+      <Route path="/teacher">
+        <Teacher />
+      </Route>
+      <Route path="/student">
+        <Student />
+      </Route>
+      <Route path='/Logout' component={Login} />
+    </Switch> */}
 
-<Switch>
-  <Route exact path="/" component={Dashbord} />
-  <Route path="/student" component={Dashbord} />
-  <Route path="/teacher" component={Teacher} />
-  <Route path='/Logout' component={Login} />
-</Switch>
-
-</Router>,
+  </Router>,
   document.getElementById('root')
 );
 

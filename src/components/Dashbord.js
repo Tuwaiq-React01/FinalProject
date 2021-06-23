@@ -14,12 +14,20 @@ import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems } from './listItems';
-import App from './App'
+import Dashbord from './Dashbord';
+import Login from './../Login';
+import Teacher from './Teacher';
+import Student from './App';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 
 function Copyright() {
@@ -184,7 +192,19 @@ export default function Dashboard() {
                             </Paper>
                         </Grid> */}
                         {/* Recent Orders */}
-                        <App />
+                        <Switch>
+                            <Route path="/dashbord">
+                                <Dashbord />
+                            </Route>
+                            <Route path="/teacher">
+                                <Teacher />
+                            </Route>
+                            <Route path="/student">
+                                <Student />
+                            </Route>
+                            {/* <Route path='/Logout' component={Login} /> */}
+                        </Switch>
+                        
                     </Grid>
                     <Box pt={4}>
                         <Copyright />
