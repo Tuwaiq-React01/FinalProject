@@ -73,13 +73,41 @@ namespace GameInfo.Controllers
             return game;
         }
 
+        //// POST: api/games
+        //[HttpPost]
+        //public async Task<ActionResult<IEnumerable<Game>>> PostGame(Game game)
+        //{
+        //    _context.Games.Add(game);
+        //    await _context.SaveChangesAsync();
+        //    return await _context.Games.ToListAsync();
+        //}
+
+
         // POST: api/games
         [HttpPost]
         public async Task<ActionResult<IEnumerable<Game>>> PostGame(Game game)
         {
-            _context.Games.Add(game);
-            await _context.SaveChangesAsync();
-            return await _context.Games.ToListAsync();
+
+
+            try
+            {
+                var jwt = Request.Cookies["jwt"];
+
+                var token = _jwtService.Verify(jwt);
+
+                int userId = int.Parse(token.Issuer);
+
+                var user = await _context.Users.FindAsync(userId);
+                User_Game toDB = new User_Game(){ Game = game, User = user };
+                _context.User_Games.Add(toDB);
+                await _context.SaveChangesAsync();
+
+                return Ok("added");
+            }
+            catch (Exception e)
+            {
+                return Unauthorized();
+            }
         }
 
 
@@ -108,17 +136,41 @@ namespace GameInfo.Controllers
 
 
 
+        //[HttpDelete("{id}")]
+        //public async Task<ActionResult<IEnumerable<Game>>> DeleteGame(int id)
+        //{
+        //    var game = _context.Games.Find(id);
+        //    _context.Games.Remove(game);
+        //    await _context.SaveChangesAsync();
+
+        //    return await _context.Games.ToListAsync();
+        //}
+
+        //UNCOMPLETED
         [HttpDelete("{id}")]
         public async Task<ActionResult<IEnumerable<Game>>> DeleteGame(int id)
         {
-            var game = _context.Games.Find(id);
-            _context.Games.Remove(game);
-            await _context.SaveChangesAsync();
+            try
+            {
+                var jwt = Request.Cookies["jwt"];
+                var token = _jwtService.Verify(jwt);
+                int userId = int.Parse(token.Issuer);
+                var user = await _context.Users.FindAsync(userId);
+                
+                var game = _context.Games.Find(id);
 
-            return await _context.Games.ToListAsync();
+                var games = _context.User_Games.Where(g => g.UserId == user.Id).Include(g => g.Game).ToListAsync();
+                var target = _context.User_Games.FirstOrDefault(g => g.UserId == userId && g.GameId == id);
+                _context.User_Games.Remove(target);
+                await _context.SaveChangesAsync();
+
+                return Ok(games);
+            }
+            catch (Exception e)
+            {
+                return Unauthorized();
+            }
         }
-
-
 
 
 

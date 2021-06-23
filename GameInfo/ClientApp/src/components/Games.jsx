@@ -49,7 +49,7 @@ const addGame  = () => {
         rating: rating,
         genre: genre
     }
-              console.log("BEFORE ADDING: ", game);
+              // console.log("BEFORE ADDING: ", game);
       axios.post(url,game)
       .then(res => {
       console.log(res)
