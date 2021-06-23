@@ -9,8 +9,7 @@
  في هذا المشروع أقدم جميع ما تعلمته خلال الشهر الشهر الثاني من المعسكر في مشروع واحد.
   المشروع عبارة عن قاعدة بيانات للأفلام والمسلسلات, والمستخدم له القدرة على تفضيل الافلام والمسلسلات واضافتها إلى قاعدة البيانات.
  
-### Demo  
- ![website](website.gif)
+### [Vdeio Demo](https://drive.google.com/file/d/1OCpNAfHEgh1v7Og9hsXO4MwEep72z89y/view?usp=sharing "video demo of the project").
   
 ### Wireframe 
 
