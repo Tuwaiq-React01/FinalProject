@@ -4,6 +4,7 @@ import axios from "axios";
 import { useHistory } from "react-router-dom";
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import OneCard from './OneCard';
+import Loading from './Loading';
 
 export default function Allimage(props) {
     const [allimage, setallimage] = useState([])
@@ -41,7 +42,7 @@ export default function Allimage(props) {
             {allimageview}
             </Row>
         </div>
-        :<h1>Lodaing ...</h1>
+        :<Loading/>
     }
       </>
     )

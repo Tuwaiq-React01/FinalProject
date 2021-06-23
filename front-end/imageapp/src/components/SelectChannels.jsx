@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import OneCard from './OneCard';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
+import Loading from './Loading';
 
 export default function SelectChannels(props) {
     const [channnel, setchannel] = useState({})
@@ -81,7 +82,7 @@ export default function SelectChannels(props) {
 
                 </div>
             </div>
-            : <h1>loding ...</h1>
+            : <Loading/>
         }
     </>
     )

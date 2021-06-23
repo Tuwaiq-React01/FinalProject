@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
-
+import Loading from './Loading';
 
 
 
@@ -110,8 +110,9 @@ export default function Profile(props) {
                         </Container>
 
                     </div>
+                   
                 </div>
-                : <h1>loding ...</h1>
+                : <Loading/>
             }
         </>
     )

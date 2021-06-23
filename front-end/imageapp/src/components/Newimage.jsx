@@ -75,13 +75,12 @@ export default function Newimage(props) {
 
     };
 
-
     return (
         <div>
             <Container style={{ marginTop: "5%", marginRight: "15%" }}>
                 <Row>
                     <Col>
-                        <img src="https://res.cloudinary.com/duuconncq/image/upload/v1623945347/ezgif.com-gif-maker_vxjd2j.gif" alt="" />
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/963f3658340327.59f8a3ee62a8e.jpeg" alt=""  width="700px" height="550px"/>
                     </Col>
                     <Col>
                         {!successfully && (

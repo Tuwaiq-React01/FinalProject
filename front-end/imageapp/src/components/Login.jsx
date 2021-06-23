@@ -52,7 +52,8 @@ export default function Login(props) {
                     <Col>
                         <img src="https://res.cloudinary.com/duuconncq/image/upload/v1623945659/ezgif.com-gif-maker_1_gpsy0m.gif" alt="" />
                     </Col>
-                    <Col>
+                    <Col style={{marginTop:"6em"}}>
+                        <h3 style={{marginBottom:"2em"}}>Sign in</h3>
                         {!error && (
                             <Alert variant={"danger"}>
                                 Email or Password incorrect !!
@@ -78,7 +79,7 @@ export default function Login(props) {
                                 <Form.Control type="password" name="password" placeholder="Password" onChange={onChangeInput} />
                             </Form.Group>
 
-                            <Button variant="primary" type="submit" onClick={onSubmit}>
+                            <Button style={{marginLeft:"20%",width:"60%"}} variant="outline-primary" type="submit" onClick={onSubmit}>
                                 Submit
                             </Button>
                         </Form>

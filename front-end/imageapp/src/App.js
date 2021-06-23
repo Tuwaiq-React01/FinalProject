@@ -13,6 +13,9 @@ import Editimage from './components/Editimage';
 import Allimage from './components/Allimage';
 import SelectImage from './components/SelectImage';
 import SelectChannels from './components/SelectChannels';
+import NavBar from './components/NavBar';
+import Home from './components/Homepage';
+import RandomImage from './components/RandomImage';
 
 function App() {
 
@@ -68,11 +71,15 @@ function App() {
 
       <Router>
         
-
-        <Route path="/signup">
+        <NavBar isLoggedIn={auth.isLoggedIn} loginCallback={userLogin} />
+        <Route exact path="/">
+          <Home  />
+        </Route>
+       
+        <Route exact path="/signup">
           <Singup loginCallback={userLogin} />
         </Route>
-        <Route path="/login">
+        <Route exact path="/login">
           <Login loginCallback={userLogin} />
         </Route>
         <Route exact path="/Profile">
@@ -96,6 +103,13 @@ function App() {
             <SelectChannels  setSelectimage={setSelectimage} data={userData.currentDataUser} selectchannels={selectchannels} />
         </Route>
 
+        <Route exact path="/Randomimage">
+            <RandomImage  />
+        </Route>
+
+
+
+        
       
 
       </Router> : <h1>Loading ...</h1>

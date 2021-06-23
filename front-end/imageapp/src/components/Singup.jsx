@@ -172,7 +172,7 @@ if( password && email11 && confirmPassword1){
                                 <Form.Control type="password" name="ConfirmPassword" placeholder="Password" onChange={onChangeInputPassWord} />
                             </Form.Group>
 
-                            <Button variant="primary" type="submit" onClick={onSubmit}>
+                            <Button style={{marginLeft:"20%",width:"60%"}} variant="outline-primary" type="submit" onClick={onSubmit}>
                                 Submit
                             </Button>
                         </Form>

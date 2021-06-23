@@ -89,7 +89,7 @@ export default function Editimage(props) {
         <Container style={{ marginTop: "5%", marginRight: "15%" }}>
             <Row>
                 <Col>
-                    <img src="https://res.cloudinary.com/duuconncq/image/upload/v1623945347/ezgif.com-gif-maker_vxjd2j.gif" alt="" />
+                    <img src="https://res.cloudinary.com/duuconncq/image/upload/v1624046012/bunjvww6cuq6tj20gew5.gif" alt="" />
                 </Col>
                 <Col>
                     {!successfully && (

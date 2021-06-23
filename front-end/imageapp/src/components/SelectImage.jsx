@@ -8,7 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import CommentBox from './CommentBox'
-
+import Loading from './Loading';
 
 import axios from 'axios';
 
@@ -32,6 +32,10 @@ export default function SelectImage(props) {
     const [show, setShow] = useState(false)
     const [comment, setComment] = useState([]);
     const [selecti,setselecti]= useState(JSON.parse(localStorage.getItem('setSelectimage')))
+    const [selectimage2, setselectimage2] = useState({})
+    const [flag, setflag] = useState(false)
+    const [loading, setloading] = useState(false)
+
 
 
     console.log( selecti)
@@ -44,6 +48,17 @@ export default function SelectImage(props) {
                 setcreateimage(res.data.user)
             })
     }, [])
+
+
+    useEffect(() => {
+        axios.get(`http://localhost:4000/api/Image/selectImage/${selecti._id}`)
+            .then(res => {
+                // console.log(props.data._id)
+                console.log("ldjcn ",res.data)
+                setselectimage2(res.data.image)
+                
+            })
+    }, [flag])
 
     function calcAvrg(array) {
         if (!array) return 0
@@ -66,6 +81,8 @@ export default function SelectImage(props) {
             .then((res) => {
                 console.log("res.data.user from profile update ",res)
             }) .catch((err) => console.log(err));
+            window.location.reload();
+
     };
 
 
@@ -84,29 +101,39 @@ export default function SelectImage(props) {
         axios.post(`http://localhost:4000/api/Image/AddComment/${selecti._id}/${props.data._id}`, comment)
             .then((res) => {
                 console.log("data", res)
-                // history.push(`/Allpodcast/:id/${podId}`);
+                setflag(true)
+                setShow(false)
+                setComment({ comment: '' });
             })
+
+            
       }
 
     const sh = () => {
         setShow(true)
      };
 
-
-     const allComment = selecti.addcomment.comment == 0 ? '' : selecti.addcomment.map((ele) => {
+     if(selectimage2[0] != null){
+     var allComment = selectimage2[0].addcomment.comment == 0 ? '' : selectimage2[0].addcomment.map((ele) => {
         console.log("comment", ele)
         return <CommentBox ele={ele}/>
     })
-
-
+}
+var t= false
+if(selectimage2[0] != null){
+    var t = true
+}
 
     return (
+        
         <div style={{ marginTop: "3em", color: "black" }} className="App">
+            {t?
+            
             <Container>
                 <Row>
                     <Col>
                         <Paper className={classes.paper}>
-                            <img src={selecti.image} alt="" style={{ width: "550px", height: "550px" }} />
+                            <img src={selectimage2[0].image} alt="" style={{ width: "550px", height: "550px" }} />
                             <div style={{textAlign:"left",marginTop:"2em"}}>
                             <Button id="butt"onClick={sh} title="Add Comment">AddComment </Button>
                             {show && <div>
@@ -138,14 +165,14 @@ export default function SelectImage(props) {
                             <Row>
                                 <Col >
 
-                                    <h5 > {selecti.title}</h5>
+                                    <h5 > {selectimage2[0].title}</h5>
 
                                 </Col>
                                 <Col >
                                     <Rating
                                         name="hover-feedback"
 
-                                        value={calcAvrg(selecti.rate)}
+                                        value={calcAvrg(selectimage2[0].rate)}
                                         precision={0.5}
                                         onChange={(event, newValue) => {
                                             console.log("Abdulrahman ", newValue, " ev ", event)
@@ -158,18 +185,20 @@ export default function SelectImage(props) {
                         </Container>
                         <div style={{ textAlign: "left", marginTop: "3em" }}>
                             <h5>Description : </h5>
-                            <h6>{selecti.description}</h6>
+                            <h6>{selectimage2[0].description}</h6>
                         </div>
+                        <h3 style={{ textAlign: "left", marginTop: "1em" }}>Comments : </h3>
                         <hr/>
+                        
                         {allComment}
 
 
                     </Col>
                 </Row>
             </Container>
+:<Loading/>
 
-
-
+                                    }
         </div>
     )
 }
