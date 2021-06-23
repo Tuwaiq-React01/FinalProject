@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "productName": "SheaMoisture coconut & hibiscus",
+      "suitableFor ": "2A 3A 2B 3B 2C 3C",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71PsJ%2BqqcBL._SL1500_.jpg",
+      "details": "This SheaMoisture Manuka Honey and Yogurt Shampoo is completely sulfate-free, and it still produces luxurious lather that gently cleanses your follicles while infusing your hair with intensive moisture...",
+      "HowToUse": "Refer to individual items",
+      "ingredients": "Refer to individual items",
+      "website": "https://www.sheamoisture.com/hair/manuka-honey-and-yogurt"
+    },
+    {
+      "id": "2",
+      "productName": "SheaMoisture Manuka Honey & Yogurt Hydrate & Repair",
+      "suitableFor ": "2A 3A 2B 3B 2C 3C",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSYFvbS2bOg3g3jm055lBRr1yhrHZEMgzDKI75qUHhKQj9DJ44cMTxxIquiLtSUMinnQ3b4c_dseWgt6sTAtHolVSlOOMGV",
+      "details": "This SheaMoisture Manuka Honey and Yogurt Shampoo is completely sulfate-free, and it still produces luxurious lather that gently cleanses your follicles while infusing your hair with intensive moisture...",
+      "HowToUse": "Refer to individual items",
+      "ingredients": "Refer to individual items",
+      "website": "https://www.sheamoisture.com/hair/manuka-honey-and-yogurt"
+    },
+    {
+      "id": "3",
+      "productName": "SheaMoisture jamaican black castor oil strengthen grow & restore",
+      "suitableFor ": "2A 3A 2B 3B 2C 3C",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71cjeZ99t7L._SL1041_.jpg",
+      "details": "This SheaMoisture Manuka Honey and Yogurt Shampoo is completely sulfate-free, and it still produces luxurious lather that gently cleanses your follicles while infusing your hair with intensive moisture...",
+      "HowToUse": "Refer to individual items",
+      "ingredients": "Refer to individual items",
+      "website": "https://www.sheamoisture.com/hair/manuka-honey-and-yogurt"
+    },
+    {
+      "id": "4",
+      "productName": "Purple Rice Water Strength & Color Care",
+      "suitableFor ": "1A 2A 3A 4A 1B 2B 3B 4B 1C 2C 3C 4C",
+      "image": "https://i5.walmartimages.com/asr/51365078-2156-44ea-950e-9a5448a108ee.b21adb45cbffb2b3df4a0a37beefb6d7.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff",
+      "details": "Hair can become brittle for a number of reasons, including color treating. Purple Rice Water Strength + Color Care Shampoo helps restore hair to a stronger, healthier state...",
+      "HowToUse": "Refer to individual items",
+      "ingredients": "Refer to individual items",
+      "website": "https://www.sheamoisture.com/hair/purple-rice-water"
+    },
+    {
+      "id": "5",
+      "productName": "Rizos Curls",
+      "suitableFor ": "1A 2A 3A 4A 1B 2B 3B 4B 1C 2C 3C 4C",
+      "image": "https://cdn.shopify.com/s/files/1/1822/5087/products/RizosCurls4StepBundle930x1240_1080x.png?v=1618874616",
+      "details": "Hair can become brittle for a number of reasons, including color treating. Purple Rice Water Strength + Color Care Shampoo helps restore hair to a stronger, healthier state...",
+      "HowToUse": "Refer to individual items",
+      "ingredients": "Refer to individual items",
+      "website": "https://rizoscurls.com/collections/shop-products/products/the-complete-rizos-curls-4-step-bundle"
+    },
+    {
+    "id": "6",
+    "productName": "Curl smith ",
+    "suitableFor ": "1A 2A 3A 4A 1B 2B 3B 4B 1C 2C 3C 4C",
+    "image": "https://cdn.shopify.com/s/files/1/1719/1281/products/ScalpLine_1024x1024.jpg?v=1607958831",
+    "details": "Hair can become brittle for a number of reasons, including color treating. Purple Rice Water Strength + Color Care Shampoo helps restore hair to a stronger, healthier state...",
+    "HowToUse": "Refer to individual items",
+    "ingredients": "Refer to individual items",
+    "website": "https://curlsmith.com/products/full-scalp-line"
+    }
+  ]
+}
