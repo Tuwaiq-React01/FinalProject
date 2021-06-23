@@ -27,17 +27,7 @@ export default function Musical(props) {
             console.log(res.data);
             getMusicalList()  
           })}
-
-          const EditPost = (post) => {
-            axios.put(`http://localhost:3000/Music/${post.id}`, post)
-                .then(response => {
-                    console.log("res in edit", response);
-                }).catch((err) => {
-                    console.log("error in edit", err);
-                })
-        }
-
-      
+     
     return (
       <div>
       <ReactBootStrap.Carousel >
@@ -119,7 +109,7 @@ export default function Musical(props) {
 
           <button
          className="btn btn-outline-secondary"
-         onClick={()=>EditPost(musical)}   style={{ color: "blue", marginTop: "7px" }} >
+           style={{ color: "blue", marginTop: "7px" }} >
           <Link to={{ pathname: `/edit`, state: { musical: props.musical } }} style={{textDecoration:"none",color:"white"}}>
          Edit
       </Link>
