@@ -4,7 +4,7 @@
   # Books Info
 
 ### فكرة المشروع| Project Idea
-   Firebase API على قاعدة بيانات باستخدام CRUD موقع بسيط يطبق مفهوم عمليات 
+   Facebook باستخدام  Authintication بالاضافة الى الـ  Firebase API على قاعدة بيانات باستخدام CRUD موقع بسيط يطبق مفهوم عمليات 
   ### Demo  
   ![alt text](https://i.ibb.co/pXM2MtC/mywebsite2.gif)
   ### Set up Prerequisites
