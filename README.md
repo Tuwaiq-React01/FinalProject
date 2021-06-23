@@ -1,21 +1,44 @@
+<div dir="rtl" align="right" >
+  
+![Tuwaiq](https://i.ibb.co/SV2BSn5/tuwaiq.png)
 
-<div dir='rtl'>
+---
 
-# Final Project | المشروع النهائي
+# VulnView
 
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
- 
+View, add, manipulate, and search for record of vulnerabilities and weaknesses found in IT systems.
 
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+## Demo
+
+![Demo](https://raw.githubusercontent.com/AWManeea/Project04_Auth_CRUD_ASP.NET/main/demo.PNG)
+
+## Set up
+
+- NET 5
+- ASP.NET MVC
+- Microsoft SQL Server
+- Node (React)
+
+## Database ER Diagram
+
+![ER Diagram](https://raw.githubusercontent.com/AWManeea/Project04_Auth_CRUD_ASP.NET/main/erd.PNG)
+
+## Front-End
+
+- HTML
+- CSS
+- JS
+- React
+- Bootstrap
+
+## Back-End
+
+- ASP.NET MVC
+- MSSQL Server
+- EF Core
+
+## Author
+
+Abdulrahman Al-Maneea
+
+</div>
