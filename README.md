@@ -1,7 +1,6 @@
 # React Project
-# (App_Name) | اسم التطبيق
-### Flower App
-# المقدمــة | Introduction 
+# Flower App| اسم التطبيق
+## المقدمــة | Introduction 
 ### The Flowers offers everything from individual flowers, to flower boxes and colorful bouquets.  What we like about this website is its straightforward approach.  
 # Project 
 
