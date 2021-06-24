@@ -28,7 +28,7 @@
 ### Set up  
 ### Prerequisites
 - Visual Studio Code 
-- node js 
+
 ### Set up  
  #### react Library 
  #### facebook Authentication
