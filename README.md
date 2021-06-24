@@ -26,4 +26,10 @@
   ![](https://raw.githubusercontent.com/Abdullah-ALHaif/FinalProject/main/2.jpg)
   
   
+  مصدر لإضافة API:
+  https://console.firebase.google.com/project/photo-gallery-801af
+  
+  مصدر Facebook Authentication:
+  https://developers.facebook.com/apps
+  
 </div>
