@@ -60,6 +60,7 @@ in another port run
  - HTML
  - Bootstrap 
  - Materializecss
+ - Google Fonts
 
 ## Author
 - Samirah Alhusayni
