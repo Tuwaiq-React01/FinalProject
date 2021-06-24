@@ -1,21 +1,28 @@
 
-<div dir='rtl'>
+# Superhero
 
-# Final Project | المشروع النهائي
+### Introduction 
+  A website Where you can find details about a hero or create your own and make your hero win the fight.
 
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
- 
 
-<div dir='rtl'>
+<img src="./1.png" alt="drawing"/>
+<br>
+<br>
+<br>
+<img src="./2.png" alt="drawing"/>
   
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+
+### Front-End  
+ - React.Js
+ - CSS
+ - React-Bootstrap
+ - React-suite
+
+
+### Back-End 
+ - Asp.net MVC
+ - MSSQL
+
+### Author
+ Faisal Alsagri
+
