@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card{
+  width: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float:left;
+  border: none !important;
+  box-shadow: 10px 10px 10px 5px #aaaaaa;
+}
+
+.card-header{
+  padding-top: 20px;
+  border-bottom: none  !important;
+  background: none !important;
+}
+
+.my-btn{
+  background: #696969 !important;
+  color : cornsilk !important;
+  box-shadow: 10px 10px 10px 5px #aaaaaa;
+}
+
+.add-btn{
+  background: #22187a  !important;
+  box-shadow: 7px 7px 4px 4px #aaaaaa;
+}
+
+.dang-btn{
+  background: #f82b2b !important;
+  color : cornsilk;
+  box-shadow: 7px 7px 4px 4px #aaaaaa;
+}
+
+.Aboutcard{
+  width: 100% !important;
+  height:200px !important;
+  border: black !important;
+  margin: auto !important;
+  margin-top: 20px !important;
+  font-size:2rem !important;
+  
+}
+.profile{
+  padding-left: 600px !important;
+}
