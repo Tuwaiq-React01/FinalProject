@@ -14,14 +14,14 @@ React app for managing products of the game store
  ![Demo 2](https://raw.githubusercontent.com/NorahMAlmutairi/FinalProject/main/demo2.png)
  
  ## Set up
-    - visual studio code
-    -  node Js
+   - visual studio code
+   -  node Js
   ## Prerequisites
-    	- npm i  react-router-dome
-    	- npm i  react-Facebook-login
-    	- npm i axios
-    	- npm i bootstrap
-    	- API []
+    - npm i  react-router-dome
+    - npm i  react-Facebook-login
+    - npm i axios
+    - npm i bootstrap
+    - API []
   ##  Front-End
    - React
    - HTML
@@ -29,10 +29,10 @@ React app for managing products of the game store
    - JavaScript
    - -Bootstrap
   ##  Back-End
- *Database*
- SQL Server 
-  *ASP. NET*
- ASP Web Application API
+  Database
+ ,SQL Server 
+ ,ASP. NET
+ ,ASP Web Application API
   
  ###  Author
  Norah Almutairi
