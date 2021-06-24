@@ -1,21 +1,39 @@
 
-<div dir='rtl'>
+  ----
+  # Nojoom website
 
-# Final Project | المشروع النهائي
+### المقدمــة | Introduction 
 
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
- 
+      موقع يربط مابين المشاهير  والمعجبين بهم  
+      ويحقق هذا الموقع دخل اضافي للمشاهير من خلال ارسال مقاطع تهنئة للمعجبين انفسهم او عائلاتهم او اصدقائهم
 
-<div dir='rtl'>
+  ### Demo  
+   ![alt text](Demo.gif)
+  ### Wireframe  
+  - Home Page
+   ![alt text](HomePage.png)
   
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+   
+  ### Set up Prerequisites
+  - NET 5 
+  - ASP.NET MVC
+  - Microsoft SQL Server 
+  - npm 
+  ### Set up  
+  ``` dotnet run```
+   #### Database
+   ``` dotnet ef database update```
+  ### Front-End  
+   - React
+   - HTML
+   - CSS
+   - Bootstrap 
+  ### Back-End 
+   - ASP.NET MVC
+   - MSSQL Server
+   - EF Core
+  ### Author
+    Ahmed Almutairi
+  ### License & Resource
+   - Code released under the MIT License
+   - Bootstrap [released under the MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE)
