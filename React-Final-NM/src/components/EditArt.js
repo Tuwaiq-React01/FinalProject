@@ -46,7 +46,7 @@ class EditArt extends React.Component {
               onChange={(e) => this.setState({ picture: e.target.value })}
             />
           </div>
-          <button className="ui button blue">Update</button>
+          <button className="ui button brown">Update</button>
         </form>
       </div>
     );
