@@ -5,22 +5,28 @@
 
   Photo Gallery
   
-  #وصف المشروع:
+ 
+#وصف المشروع:
   
-  المشروع عبارة أستوديو للصور ويستخدم قاعدة بيانات Firebase ويمكن تطبيق جميع عمليات CRUD عليها من حذف وإضافة وتعديل..
-  
+المشروع عبارة أستوديو للصور ويستخدم قاعدة بيانات Firebase ويمكن تطبيق جميع عمليات CRUD عليها من حذف وإضافة وتعديل..
+
+
   الأدوات والمكتبات التي تم استخدامها:
+  
   React
   JavaScript
   Firebase
  مكتبة router-dom
  Facebook Authentication
-  مكتبة Modal لإضافة الصور
+ مكتبة Modal لإضافة الصور
+  
   
   صور للمشروع:
   
   ![](https://raw.githubusercontent.com/Abdullah-ALHaif/FinalProject/main/1.jpg)
   ![](https://raw.githubusercontent.com/Abdullah-ALHaif/FinalProject/main/2.jpg)
+  
+  
   </div>
   
   
