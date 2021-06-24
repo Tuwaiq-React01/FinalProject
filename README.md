@@ -17,7 +17,6 @@
  <img src="./Resources/Ejar_Demo.gif" />
   <br/>
   <br/>
-  <img src="./Resources/Ejar_Demo2.gif" />
 
  <br/>
   <br/>
