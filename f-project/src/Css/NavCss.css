@@ -5,13 +5,25 @@
 }
 .nav-representer{
     display:flex;
+    background-color: black;
+    padding-top: 2em;
+    font-size: larger;
+    
 }
 ul{
     list-style-type:none;
     display: inline;
+    
   }
   li{
     padding:2em;
     list-style-type:none;
     display: inline; 
+    color: #FFFFFF;
+    text-decoration: none;
+    justify-content: center;
+  }
+  .bg{
+    width: 100%;
+   z-index: 0;
   }

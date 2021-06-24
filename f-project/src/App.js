@@ -20,7 +20,7 @@ import {
 export default function App() {
   return (
     <Router>
-    <div>
+    <>
     <NavigationBar/>
     <Switch>
       <Route path="/"exact component={Home}/> 
@@ -35,7 +35,7 @@ export default function App() {
       </AuthProvider>
       </Switch>
      
-    </div>
+    </>
     </Router>
   )
 }

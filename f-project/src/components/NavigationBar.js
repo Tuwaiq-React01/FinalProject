@@ -2,9 +2,10 @@ import React from 'react';
 import '../Css/NavCss.css';
 import HomeLogo from '../Pics/HomeLogo.png'
 import {Link} from 'react-router-dom'
+import { Navbar } from 'react-bootstrap';
  const NavigationBar = () => {
     return (
-        <div>
+        <>
             <nav className="nav-representer">
                 <div>
                 <Link to="/">
@@ -39,7 +40,7 @@ import {Link} from 'react-router-dom'
                  </ul>
                 </div>
                 </nav>
-        </div>
+        </>
     )
 }
 export default NavigationBar;
