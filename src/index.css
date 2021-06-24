@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Modal {
+  position: absolute;
+  top: 120px;
+  left: 240px;
+  right: 240px;
+  bottom: 120px;
+  @apply border border-gray-200 rounded-lg shadow-lg bg-white;
+}
+
+.Overlay {
+}
+
+input[type="radio"]:checked + label {
+  @apply text-white bg-blue-500 border-2 border-blue-500;
+}
