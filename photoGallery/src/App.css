@@ -1,7 +1,12 @@
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   color: #fff;
   margin: 0;
 }
+
+p{
+  color: white;
+}
+
 .heart {
   width: 50px !important;
   height: 40px;

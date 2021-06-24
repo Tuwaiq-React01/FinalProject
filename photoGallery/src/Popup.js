@@ -8,7 +8,7 @@ export default function Popup() {
     const [isOpen, setIsOpen]=useState(false)
     const [desc, setDesc]=useState("")
     const [img, setImg]=useState("")
-    const [postArray, setPost]=useState([])
+    
 
     const ref = firebase.firestore().collection("photo-gallery");
 
@@ -27,13 +27,6 @@ export default function Popup() {
     const handleImage = e =>{
         setImg(e.target.value)
     }
-
-    // const addPost = () => {
-    //     setIsOpen(false)
-    //     const component=postArray
-    //     component.push({title: title, image: image})
-    //     setPost(component)
-    // }
 
     // ADD FUNCTION
     const addPicture=(newPic)=> {
@@ -56,15 +49,20 @@ export default function Popup() {
                 Add a Picture
             </button>
 
-            {postArray.map((item, index)=>(
-                <Post key={index} title={item.title} img={item.image} />
-            ))}
-
             <Modal
                 isOpen={isOpen}
                 ariaHideApp={false}
                 onRequestClose={hidePopup}
-                contentLabel="Add a post">
+                contentLabel="Add a post"
+                style={{content:{ 
+                    backgroundColor:'rgba(40, 44, 52, 0.7)',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontFamily: 'Times New Roman, Times, serif',
+                    color:'white'
+                }}}
+                >
+                
 
                 <h1>Add Your Photo To The Gallery</h1>
                
@@ -72,7 +70,7 @@ export default function Popup() {
                 <input type="text" onChange={handleImage} ></input>
                 <label>Description:</label>
                 <input type="text" onChange={handleTitle}></input>
-                <button onClick={() => { addPicture({ img, desc, id: uuidv4() }); hidePopup();}}>Add Picture</button>
+                <button className="btn btn-outline-info" id="button" onClick={() => { addPicture({ img, desc, id: uuidv4() }); hidePopup();}}>Add Picture</button>
 
 
                 </Modal>

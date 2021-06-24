@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from "react";
 import firebase from "./firebase";
 import { v4 as uuidv4 } from "uuid";
 import "./App.css"
+import { Link } from "react-router-dom";
 
 function SnapshotFirebase() {
   const [pictures, setPictures] = useState([]);
@@ -62,7 +63,13 @@ function SnapshotFirebase() {
   }
 
   return (
+      
       <div className="body">
+            <nav>
+                <nav>
+                <Link to="/"> Home </Link>
+                </nav>
+            </nav>
     <Fragment>
       <h1>Pictures</h1>
       <div className="inp">
