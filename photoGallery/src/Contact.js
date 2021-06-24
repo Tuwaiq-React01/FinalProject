@@ -9,12 +9,12 @@ export default function Contact() {
     },[])
 
     return (
-        <div>
+        <div className="App-header">
             <nav>
                 <Link to="/"> Home </Link>
             </nav>
             <h1>Contact US:</h1><hr/>
-            <p><b>Name:</b>     {number}</p>
+            <p><b>Phone Number:</b>     {number}</p>
             <p><b>Email:</b>    aalhaif@hotmail.com</p>
         </div>
     )
