@@ -3,11 +3,28 @@
 
 # Final Project | المشروع النهائي
 
+  Photo Gallery
   
+  #وصف المشروع:
+  
+  المشروع عبارة أستوديو للصور ويستخدم قاعدة بيانات Firebase ويمكن تطبيق جميع عمليات CRUD عليها من حذف وإضافة وتعديل..
+  
+  الأدوات والمكتبات التي تم استخدامها:
+  React
+  JavaScript
+  Firebase
+ مكتبة router-dom
+ Facebook Authentication
+  مكتبة Modal لإضافة الصور
+  
+  صور للمشروع:
+  
+  ![](https://raw.githubusercontent.com/Abdullah-ALHaif/FinalProject/main/1.jpg)
+  ![](https://raw.githubusercontent.com/Abdullah-ALHaif/FinalProject/main/2.jpg)
   </div>
   
   
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
+  
  
 
 <div dir='rtl'>
