@@ -22,7 +22,7 @@
 
 #### in the terminal
 ``` 
-    git clone https://github.com/Raneen-z/FinalProject.git
+    git clone https://github.com/desktop/FinalProject.git
     cd hairProducts
     npm i 
 ```
