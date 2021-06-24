@@ -1,4 +1,4 @@
-<div dir="rtl" align="left" >
+<div dir="ltr" align="left" >
   
 ![Tuwaiq](https://i.ibb.co/SV2BSn5/tuwaiq.png)
   
