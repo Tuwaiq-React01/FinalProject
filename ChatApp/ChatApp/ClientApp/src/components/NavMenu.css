@@ -1,0 +1,22 @@
+﻿a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 14px;
+
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  color: aliceblue;
+
+  background-image: linear-gradient(to right, rgb(122,56,208), rgb(17, 58, 105), rgb(1,122,177));
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
