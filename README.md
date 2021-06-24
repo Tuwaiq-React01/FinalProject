@@ -7,7 +7,7 @@
 
 # Introduction : 
 
-In this application you can see a punch of different quotes that you can enjoy and you can add your favourite quotes and delete the ones that you no longer appreciate.
+In this application you can Login by using your EMAIL or your Google Account and see a punch of different quotes that you can enjoy and you can add your favourite quotes and delete the ones that you no longer appreciate.
 
 
 # Images : 
