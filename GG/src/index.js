@@ -4,9 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import firebase from 'firebase';
-
-
-
+import {Route,BrowserRouter as Router}from 'react-router-dom'
 
 var firebaseConfig = {
   apiKey: "AIzaSyCum5BOMujetdqPJFiAZJoQCvW7RApI_PU",
@@ -22,12 +20,12 @@ firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Route exact path="/" component={App}>
+      </Route>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
