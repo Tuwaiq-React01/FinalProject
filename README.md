@@ -3,19 +3,38 @@
 
 # Final Project | المشروع النهائي
 
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
+<div>
+  # project Idea:
  
+  Fragrance Store Admin DashBoard. It allows the admin to Add new Fragrance, Edit existing Fragrance, and Delete. 
+  
+  # Demo
+  
+  ## Setup
+  
+  - MVC (Visual Stadio) to create API applies CRUD.
+  - node js
+  
+  ## Prequisites
+  
+  - npm (bootstrap)
+  - npm (react-route-dom)
+  - npm (react-Facebook-Login)
+  - npm (axios)
+  - API (using MVC as backend
+  - MySQL Server (to create Database using code first approach)
+  - ASP.Net to creat Web App API
+  - HTML
+  - CSS
+  - JavaScript
+  
+  ## Trainee Name:
+  
+  Arwa Wan La
+  
+  ## Group Name:
+  Aldiryah
 
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+  ## Supervisor:
+  Hatim Al-Salman
+<div>
