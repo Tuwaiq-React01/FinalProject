@@ -1,0 +1,17 @@
+
+.Home-logo{
+    height:5em;
+    width:8em;
+}
+.nav-representer{
+    display:flex;
+}
+ul{
+    list-style-type:none;
+    display: inline;
+  }
+  li{
+    padding:2em;
+    list-style-type:none;
+    display: inline; 
+  }
