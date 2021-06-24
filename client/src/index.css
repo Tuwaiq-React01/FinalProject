@@ -304,17 +304,17 @@ padding-bottom: 100px;
 
 
 
-* {
+/* * {
 	margin: 0;
 	padding: 0;
-  }
-  body {
+  } */
+  /* body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	background: #000;
-  }
+  } */
   .a01 {
 	text-decoration: none;
 	color: inherit;

@@ -119,7 +119,10 @@ const Update = (props) => {
             "Authorization": `Bearer ${getToken()}`
         }})
           .then((res) => {
-          setMessageSubmit(" submitted") } )
+          setMessageSubmit(" submitted")
+        
+          navigate(`/addpic/${tourId}`);
+        } )
             .catch((err) =>  setMessageSubmit("Not Submitted")
             );
     }
@@ -135,7 +138,7 @@ const Update = (props) => {
                 <div className="Dform">
                     <div className="header">
                     <h1>Welcome!</h1>
-                            <p>Please provide the place information below.</p>
+                            <p>Please update the place information below.</p>
                     </div> 
                     <form>
                 <div className="inputcontainer">
@@ -185,12 +188,8 @@ const Update = (props) => {
 
 
 
-                    <div class="form-group row">
-                        <label for="" class="col-sm-2 col-form-label"> Image</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="" onChange = {(e)=>setImage(e.target.value)}  value={image} />
-                    </div>
-                    </div>
+                 
+                 
                     <div class="form-group row">
                         <label for="" class="col-sm-2 col-form-label"> Pickup Location</label>
                         <div class="col-sm-10">
@@ -266,7 +265,7 @@ const Update = (props) => {
                     </div>
                    
                 
-                <button className="btn mb-4  btn-lg btn-block" id = "Charbtn" type='submit' onClick = {handleSubmit}>Update</button>
+                <button className="btn mb-4  btn-lg btn-block" id = "Charbtn" type='submit' onClick = {handleSubmit}>Next</button>
             </div>
             <p>{msg}</p>
             </form>

@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react';
 import { Router, Link, navigate } from '@reach/router';
 import axios from 'axios';
 import Fade from 'react-reveal/Fade'; 
-
+import Footer from './Footer';
 function Home(props) {
 
 const [allTours, setAllTours] = useState([]);
@@ -145,7 +145,7 @@ According to a new industry report, the Saudi entertainment and amusement sector
             </Fade>
           </section>
 
-          <section id="quotes-section" className="text-center mb-3 py-5">
+          {/* <section id="quotes-section" className="text-center mb-3 py-5">
             <div className="container">
               <div className="row">
               <div className="col-lg-6 mx-auto my-5">
@@ -156,12 +156,10 @@ According to a new industry report, the Saudi entertainment and amusement sector
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
-          
-          <footer class="footer my-0 py-5 px-3">
-              <p class="text-muted small mb-4 mb-lg-0 text-center">&#169; Website 2021. By Riham</p>
-          </footer>   
+           <Footer />
+       
           </div>
 
         </>
