@@ -13,7 +13,8 @@
 Great Art is measured by its influence, therefore, this web application was made to display the most influential pieces of many great artists.
 This project supports the artist and the art enthusiast, where artists can log in and display information about their paintings to all who are intrusted.
 
-
+### Wireframe  
+<p>You can view application wireframe <a href="https://wireframe.cc/pro/pp/94731482c452947" rel="nofollow">here</a></p> 
 
 
 
