@@ -130,10 +130,11 @@ function AddNewCar(props) {
                                        name="Year" onChange={HandelYear} required/>
                             </div>
                         </div>
+            {/*
                         <fieldset className="form-group">
                             <div className="row">
                                 <legend className="col-form-label col-sm-2 pt-0">Type</legend>
-                               {/* <div className="col-sm-10">
+                               { <div className="col-sm-10">
                                     <div className="form-check">
                                         <input className="form-check-input" asp-for="Type" type="radio" name="Type"
                                                value="Gas" onChange={set} checked/>
@@ -148,9 +149,9 @@ function AddNewCar(props) {
                                                 Electric
                                             </label>
                                     </div>
-                                </div>*/}
+                                </div>
                             </div>
-                        </fieldset>
+                        </fieldset>*/}
                         <div className="form-group row">
                             <label htmlFor="PlateNumber" className="col-sm-2 col-form-label">Plate Number</label>
                             <div className="col-sm-10">
@@ -172,10 +173,11 @@ function AddNewCar(props) {
                                        name="HourPrice" placeholder="ex.. 15" onChange={HandelHprice} required/>
                             </div>
                         </div>
+            {/*
                         <fieldset className="form-group">
                             <div className="row">
                                 <legend className="col-form-label col-sm-2 pt-0">Available Now</legend>
-                                {/*<div className="col-sm-10">
+                                <div className="col-sm-10">
                                     <div className="form-check">
                                         <input asp-for="Available" type="radio" name="Available" value="True"
                                                className="form-check-input" onChange={setAva} checked/>
@@ -190,10 +192,11 @@ function AddNewCar(props) {
                                                 No
                                             </label>
                                     </div>
-                                </div>*/}
+                                </div>
                             </div>
                         </fieldset>
-
+*/}
+            <br/>
             <MultiImageInput
                 theme="light"
                 max={5}
@@ -201,9 +204,7 @@ function AddNewCar(props) {
                 setImages={setImages}
                 cropConfig={{ crop, ruleOfThirds: true }}
             />
-            
-                       
-
+            <br/>
                         <div className="form-group row">
                             <div className="col-sm-10">
                                 <button onClick={
@@ -213,7 +214,7 @@ function AddNewCar(props) {
                                 } className="btn btn-primary">Add Car</button>
                             </div>
                         </div>
-
+            <br/>
         </div>
     );
 }
