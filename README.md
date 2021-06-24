@@ -20,13 +20,14 @@ the project provides a service that helps the companies or individuals who organ
 
 ![Capture2222222222222222222222222222](https://user-images.githubusercontent.com/82495629/123251633-1a1aba00-d4f4-11eb-9d70-5eca1ea846d4.PNG)
 
-##### Prerequisites
+##### Back-End
 
 - ASP.NET MVC
 - Microsoft SQL Server
 - JSON Web Token
-- Google oAUth Sign-in
 - System.Net.Mail Namespace
+- ASP.NET MVC
+- EF Core
 ##### Set up
 ##### Database
 - MSSQL Server
@@ -37,8 +38,9 @@ the project provides a service that helps the companies or individuals who organ
 - React library 
 - Bootstrap
 - Back-End
-- ASP.NET MVC
-- EF Core
+- Google oAUth Sign-in
+
+
 ##### Testing 
 Postman
 
