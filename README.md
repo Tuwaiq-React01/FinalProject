@@ -18,7 +18,7 @@ the project provides a service that helps the companies or individuals who organ
 
 ##### ER Diagram 
 
-![Capture0000](https://user-images.githubusercontent.com/82495629/123247631-c4441300-d4ef-11eb-8fc2-dac65a179482.PNG)
+![Capture2222222222222222222222222222](https://user-images.githubusercontent.com/82495629/123251633-1a1aba00-d4f4-11eb-9d70-5eca1ea846d4.PNG)
 
 ##### Prerequisites
 
