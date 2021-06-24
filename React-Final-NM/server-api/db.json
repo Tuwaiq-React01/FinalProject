@@ -1,0 +1,39 @@
+{
+  "Art": [
+    {
+      "id": "ef4c7b1a-d242-42c1-8182-eaf3565e494b",
+      "name": "Nada ",
+      "picture": "https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Latte-Art-Tulip.jpg"
+    },
+    {
+      "id": "7ba18aa7-5696-494c-b0c7-13fe600da847",
+      "name": "Raghad",
+      "picture": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/latte-art-in-a-yellow-cup-on-a-marble-table-royalty-free-image-1592427210.jpg?crop=0.615xw:0.923xh;0,0.0370xh&resize=640:*"
+    },
+    {
+      "id": "4e856290-d6e7-4784-b4d0-16f48f8538b1",
+      "name": "Lamyaa",
+      "picture": "https://dg38gzoej82xh.cloudfront.net/sites/default/files/styles/image_gallery_xl/public/images/node/article/77-latte-art.jpg?itok=JOIh_PCc"
+    },
+    {
+      "id": "a0d3f7dc-ccca-46fe-a461-d62c4e47f366",
+      "name": "Mohammed",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Cappuccino_Chiang_Mai.JPG/220px-Cappuccino_Chiang_Mai.JPG"
+    },
+    {
+      "id": "4c8232e8-477a-4482-afa3-2fb480ec5938",
+      "name": "Sana",
+      "picture": "https://images.prismic.io/yumetwins/8fe79d2b0d1c8079988d0f6d27bfbb407fb765fc_cafemain.png?auto=compress,format"
+    },
+    {
+      "id": "146ba0cb-7d1e-43e0-a6a8-298de220739b",
+      "name": "Nadiyah",
+      "picture": "https://www.homecrux.com/wp-content/uploads/2017/06/teddy-coffee-latte-art.jpg"
+    },
+    {
+      "id": "5bb94073-e428-446b-bf05-69ccee4792ff",
+      "name": "Yasmeen",
+      "picture": "https://i.kym-cdn.com/photos/images/original/001/023/396/7f9.jpg"
+    }
+  ]
+}
