@@ -1,21 +1,30 @@
+# App Name : Positive Quotes
+ ##  Introduction
+  <div dir=rtl></div>
 
-<div dir='rtl'>
+  # DEMO
+ ## Set up
+ - visual studio code
+ -  node Js
+ ## Prerequisites
+-  npm i  react-router-dome
+- npm i  react-Facebook-login
+- npm i axios
+- npm i bootstrap
+- API [https://positivequoteapi.azurewebsites.net]
+##  Front-End
+- React
+- HTML
+- CSS
+- JavaScript
+- -Bootstrap
+##  Back-End
+**Database**
+- SQL Server -code first Approch
 
-# Final Project | المشروع النهائي
-
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
- 
-
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+**ASP. NET**
+- ASP Web Application API
+- Deploy In Azure
+###  Author
+ Rahaf Alqhtani
+##
