@@ -1,0 +1,90 @@
+{
+  "paintings": [
+    {
+      "id": "1",
+      "name": "STANDING TOGETHER",
+      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/AngeloAccardi-StandingTogether.1_1_1100x.jpg?v=1596095563",
+      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
+      "price": "10400",
+      "artistId": "2"
+    },
+    {
+      "id": "2",
+      "name": "LOOKING ",
+      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/AngeloAccardi-LookingDown.1_1_1100x.jpg?v=1606219907",
+      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
+      "price": "8300",
+      "artistId": "2"
+    },
+    {
+      "id": "3",
+      "name": "ABBEY ROAD",
+      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/AngeloAccardi-AbbeyRoad.1_860x.jpg?v=1596111743",
+      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
+      "price": "5200",
+      "artistId": "2"
+    },
+    {
+      "id": "4",
+      "name": "LES CORDES DE MON AME",
+      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/Lescordesdemoname-2_1_1100x.jpg?v=1606229671",
+      "overview": "Lacquer on metal 30x24 cm | 11x9 in Limited Editio",
+      "price": "1030",
+      "artistId": "2"
+    },
+    {
+      "id": "5",
+      "name": "BOUQUET DU PARADIS",
+      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/BouquetduParadis-2_1_1100x.jpg?v=1605538407",
+      "overview": "Lacquer on metal 30x24 cm | 11x9 in Limited Editio",
+      "price": "103",
+      "artistId": "2"
+    },
+    {
+      "id": "6",
+      "name": "SENSIBLE COMME LES FLEURS",
+      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/Sensiblecommelesfleurs-2_1_1100x.jpg?v=1606403544",
+      "overview": "Lacquer on metal 30x24 cm | 11x9 in Limited Editio",
+      "price": "1033",
+      "artistId": "1"
+    },
+    {
+      "id": "7",
+      "name": "COVER GIRL MARILYN MONROE",
+      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/COVERGIRLMarilyn_1_1100x.jpg?v=1606836043",
+      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
+      "price": "10314",
+      "artistId": "2"
+    },
+    {
+      "id": "8",
+      "name": "JUST A MOUSE",
+      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/JUSTAMOUSE__1_1100x.jpg?v=1606833970",
+      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
+      "price": "5550",
+      "artistId": "2"
+    },
+    {
+      "id": "9",
+      "name": "THE LAST STAR",
+      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/THELASTSTAR__1_1100x.jpg?v=1606833845",
+      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
+      "price": "3414",
+      "artistId": "2"
+    }
+  ],
+  "Artists": [
+    {
+      "id": "1",
+      "name": "Angelo Accardi",
+      "image": "https://www.angeloaccardi.com/wp-content/uploads/sites/11/2017/12/acardi-620x620-home.jpg",
+      "bio": "Originally from a small town in the south of Italy Angelo Accardi moved to Napoli to study fine arts at the Art Academy of Naples. Shortly after, in the early 90s, he set up his personal studio close to his childhood home to embark on his pursuit of painting and sculpture. In the course of his artistic development, Accardi has been on a constant search for new sensations using mixed media to depictfigures against differing social backgrounds."
+    },
+    {
+      "id": "2",
+      "name": "Benharrouche",
+      "image": "https://www.eden-gallery.com/wp-content/uploads/sites/15/2017/09/yoel-benharrouche-at-the-studio-105-1-683x1024.jpg",
+      "bio": "Trained and educated as an artist in the south of France, Benharrouche went on to become a distinguished professor of drawing and painting at Nice´s Academie Paganini. His influences include masters such as Chagall, Picasso, and Miro, yet Benharrouche’s personal style comes through in each of his compositions with much strength, balance and harmony. Deeply spiritual, Yoel Benharrouche establishes a sincere connection with his audience. His vibrant palette and mystical contemplation explore both the historical and spiritual world of Israel. He paints his surroundings with a lyrical quality that has landed him among the elite artists of the world, exploring the duality between the material and the mystical world."
+    }
+  ]
+}
