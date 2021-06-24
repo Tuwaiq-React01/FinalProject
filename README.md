@@ -17,7 +17,6 @@
 ### Set up  
 ### Prerequisites
 - NET 5 
-- ASP.NET MVC
 - Microsoft SQL Server 
   
 ### Set up  
