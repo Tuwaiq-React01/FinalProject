@@ -22,7 +22,7 @@
 - JavaScript package manager 
 - Git
 
-#### in the terminal
+#### by using gitbash
 ``` 
     git clone https://github.com/Sara-Alnasser/FinalProject.git
     cd FinalProject
