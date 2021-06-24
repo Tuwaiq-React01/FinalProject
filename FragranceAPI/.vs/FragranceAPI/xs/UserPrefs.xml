@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{7B3BFD63-6FA9-4B33-B636-ABD4FE0BD805}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FragranceAPI/Data/AppDbContext.cs">
+    <Files>
+      <File FileName="FragranceAPI/appsettings.json" Line="14" Column="1" />
+      <File FileName="FragranceAPI/Startup.cs" Line="26" Column="14" />
+      <File FileName="FragranceAPI/Data/AppDbContext.cs" Line="25" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FragranceAPI" expanded="True">
+            <Node name="FragranceAPI" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Data" expanded="True">
+                <Node name="AppDbContext.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FragranceAPI FirstBuild="True" PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
