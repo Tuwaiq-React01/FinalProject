@@ -23,7 +23,7 @@
 #### in the terminal
 ``` 
     git clone https://github.com/Raneen-z/FinalProject.git
-    cd zelda-botw
+    cd hairProducts
     npm i 
 ```
 #### Run JSON Server 
