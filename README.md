@@ -18,12 +18,13 @@ In this application you can see a punch of different quotes that you can enjoy a
 
 ## Front-End
 
-React.Js
-CSS
-React-Bootstrap
+React.Js <br/>
+CSS <br/>
+React-Bootstrap <br/>
 
 ## Back-End
-Node.js
+Node.js  <br/>
+
 Firebase API
 
 ## Programmer : 
