@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Ejar.Migrations
 {
-    public partial class InitMigration : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -328,15 +328,16 @@ namespace Ejar.Migrations
                     TimeReservedFrom = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TimeReservedUntil = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TripPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Cid = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    CarId = table.Column<int>(type: "int", nullable: true)
+                    CarModelId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Trip", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Trip_Car_CarId",
-                        column: x => x.CarId,
+                        name: "FK_Trip_Car_CarModelId",
+                        column: x => x.CarModelId,
                         principalTable: "Car",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -435,9 +436,9 @@ namespace Ejar.Migrations
                 filter: "[NormalizedName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Trip_CarId",
+                name: "IX_Trip_CarModelId",
                 table: "Trip",
-                column: "CarId");
+                column: "CarModelId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Trip_UserId",

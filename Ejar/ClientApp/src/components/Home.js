@@ -14,8 +14,9 @@ function Home(props) {
   
   async function getCars() {
     //const token = await authService.getAccessToken(); , { headers: !token ? {} : { 'Authorization': `Bearer ${token}`} }
-    await axios.get('api/home')
+    await axios.get('api/Home')
         .then((res) => {
+          console.log(res.data)
           setCars(res.data);
         })
         .catch((error) => console.error(`Error:  ${error}`))

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ejar.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210618150041_InitMigration")]
-    partial class InitMigration
+    [Migration("20210623115748_TripCarIdFK")]
+    partial class TripCarIdFK
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -283,7 +283,7 @@ namespace Ejar.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CarId")
+                    b.Property<int>("CarId")
                         .HasColumnType("int");
 
                     b.Property<string>("DateReservedFrom")
@@ -586,17 +586,19 @@ namespace Ejar.Migrations
                 {
                     b.HasOne("Ejar.Models.CarModel", "Car")
                         .WithMany("Trips")
-                        .HasForeignKey("CarId");
+                        .HasForeignKey("CarId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Ejar.Models.ApplicationUser", "ApplicationUser")
+                    b.HasOne("Ejar.Models.ApplicationUser", "User")
                         .WithMany("Trips")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ApplicationUser");
-
                     b.Navigation("Car");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

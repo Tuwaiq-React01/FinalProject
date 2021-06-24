@@ -31,17 +31,15 @@ export class NavMenu extends Component {
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
-                </NavItem>
                 <LoginMenu>
                 </LoginMenu>
+                <NavItem>
+                  <NavLink tag={Link} className="text-dark" to="/Profile">
+                    <img
+                        src="https://img.flaticon.com/icons/png/512/61/61205.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
+                        height="20"/>
+                  </NavLink>
+                </NavItem>
               </ul>
             </Collapse>
           </Container>

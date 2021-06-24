@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Ejar.Models
@@ -20,9 +21,13 @@ namespace Ejar.Models
 		public Location Location { get; set; }
 
 
-		[ForeignKey("ApplicationUser")]
+		/*[ForeignKey("ApplicationUser")]
 		public int UserId { get; set; }
-		public ApplicationUser ApplicationUser { get; set; }
+		public ApplicationUser ApplicationUser { get; set; }*/
+		[ForeignKey("AccountModel")]
+		public int AccountId { get; set; }
+		[JsonIgnore]
+		public AccountModel Account { get; set; }
 		public ICollection<TripModel> Trips { get; set; }
 		public ICollection<ImageModel> Images { get; set; }
 

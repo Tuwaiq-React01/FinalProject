@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace Ejar.Models
 {
@@ -12,16 +10,25 @@ namespace Ejar.Models
 		public string FirstName { get; set; }
 		public string LastName { get; set; }
 		public int PhoneNumber { get; set; }
+		[JsonIgnore]
 		public string PersonalPhoto { get; set; }
 		public string Address { get; set; }
+		[JsonIgnore]
 		public decimal balance { get; set; }
 
+		[JsonIgnore]
 		public string AccountComplete { get; set; }
+	
+		[JsonIgnore]
 		public LicenseModel License { get; set; }
 
 		
 		[ForeignKey("ApplicationUser")]
 		public int UserId { get; set; }
-		public ApplicationUser ApplicationUser { get; set; }
+		[JsonIgnore]
+		public ApplicationUser User { get; set; }
+		public ICollection<CarModel> Cars { get; set; }
+	
+		public ICollection<TripModel> Trips { get; set; }
 	}
 }

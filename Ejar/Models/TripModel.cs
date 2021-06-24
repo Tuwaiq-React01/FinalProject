@@ -16,16 +16,29 @@ namespace Ejar.Models
 		public string TimeReservedFrom { get; set; }
 		public string TimeReservedUntil { get; set; }
 		public decimal TripPrice { get; set; }
+		public string CarName { get; set; }
+		public string CarImage { get; set; }
+		//public int Cid { get; set; }
 		
 		
-		[ForeignKey("ApplicationUser")]
+		/*[ForeignKey("ApplicationUser")]
 		public int UserId { get; set; }
 		[JsonIgnore]
-		public ApplicationUser ApplicationUser { get; set; }
-
-		//public int CarId { get; set; }
+		public ApplicationUser User { get; set; }*/
+		[JsonIgnore]
+		[ForeignKey("AccountModel")]
+		public int AccountId { get; set; }
+		[JsonIgnore]
+		public AccountModel Account { get; set; }
+		
+		
+		[ForeignKey("CarModel")]
+		public int CarId { get; set; }
 		[JsonIgnore]
 		public CarModel Car { get; set; }
+		
+		
+		
 
 	}
 }

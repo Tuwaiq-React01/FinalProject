@@ -161,6 +161,9 @@ namespace Ejar.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("AccountId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Available")
                         .HasColumnType("nvarchar(max)");
 
@@ -185,17 +188,14 @@ namespace Ejar.Migrations
                     b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Year")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LocationId");
+                    b.HasIndex("AccountId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("LocationId");
 
                     b.ToTable("Car");
                 });
@@ -281,8 +281,17 @@ namespace Ejar.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CarId")
+                    b.Property<int>("AccountId")
                         .HasColumnType("int");
+
+                    b.Property<int>("CarId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CarImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CarName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DateReservedFrom")
                         .HasColumnType("nvarchar(max)");
@@ -299,14 +308,11 @@ namespace Ejar.Migrations
                     b.Property<decimal>("TripPrice")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("CarId");
+                    b.HasIndex("AccountId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("CarId");
 
                     b.ToTable("Trip");
                 });
@@ -521,28 +527,28 @@ namespace Ejar.Migrations
 
             modelBuilder.Entity("Ejar.Models.AccountModel", b =>
                 {
-                    b.HasOne("Ejar.Models.ApplicationUser", "ApplicationUser")
+                    b.HasOne("Ejar.Models.ApplicationUser", "User")
                         .WithOne("Account")
                         .HasForeignKey("Ejar.Models.AccountModel", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ApplicationUser");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Ejar.Models.CarModel", b =>
                 {
+                    b.HasOne("Ejar.Models.AccountModel", "Account")
+                        .WithMany("Cars")
+                        .HasForeignKey("AccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Ejar.Models.Location", "Location")
                         .WithMany()
                         .HasForeignKey("LocationId");
 
-                    b.HasOne("Ejar.Models.ApplicationUser", "ApplicationUser")
-                        .WithMany("Cars")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ApplicationUser");
+                    b.Navigation("Account");
 
                     b.Navigation("Location");
                 });
@@ -582,17 +588,19 @@ namespace Ejar.Migrations
 
             modelBuilder.Entity("Ejar.Models.TripModel", b =>
                 {
-                    b.HasOne("Ejar.Models.CarModel", "Car")
+                    b.HasOne("Ejar.Models.AccountModel", "Account")
                         .WithMany("Trips")
-                        .HasForeignKey("CarId");
-
-                    b.HasOne("Ejar.Models.ApplicationUser", "ApplicationUser")
-                        .WithMany("Trips")
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ApplicationUser");
+                    b.HasOne("Ejar.Models.CarModel", "Car")
+                        .WithMany("Trips")
+                        .HasForeignKey("CarId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
 
                     b.Navigation("Car");
                 });
@@ -650,18 +658,18 @@ namespace Ejar.Migrations
 
             modelBuilder.Entity("Ejar.Models.AccountModel", b =>
                 {
+                    b.Navigation("Cars");
+
                     b.Navigation("License");
+
+                    b.Navigation("Trips");
                 });
 
             modelBuilder.Entity("Ejar.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Account");
 
-                    b.Navigation("Cars");
-
                     b.Navigation("Location");
-
-                    b.Navigation("Trips");
                 });
 
             modelBuilder.Entity("Ejar.Models.CarModel", b =>
