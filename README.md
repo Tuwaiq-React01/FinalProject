@@ -7,6 +7,10 @@ Made for comic lovers, this application allows users to track their reading prog
 ## Demo 
 <img src="https://media2.giphy.com/media/yTKjh30w1WvJCLPetc/giphy.gif?cid=790b76118ab712bb88689719d8e574561256f38fd684adfb&rid=giphy.gif&ct=g" alt="demo" width=600>
 
+### Wireframes
+[wireframes](https://imgur.com/a/hRt4Syo "View here")
+
+
 ## Set up  
 ### Prerequisites
 - VS Code
