@@ -16,8 +16,9 @@ the project provides a service that helps the companies or individuals who organ
 #### After the organizer click on approve the customer will receive the confirmation email 
 ![Capture2225](https://user-images.githubusercontent.com/82495629/122665348-5b872e80-d1af-11eb-84bb-85bcc18a79b5.PNG)
 
+##### ER Diagram 
 
-
+![Capture0000](https://user-images.githubusercontent.com/82495629/123247631-c4441300-d4ef-11eb-8fc2-dac65a179482.PNG)
 
 ##### Prerequisites
 
