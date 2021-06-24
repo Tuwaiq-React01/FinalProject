@@ -7,7 +7,7 @@
 
 # (Students & Teachers DashBoard) 
     
-### المقدمــة | Introduction 
+### | Introduction 
 Students Dashboard system, a system that allows manager or admin to manage teachers and students. He/She can add, edit, delete and show throw the system.
 ### Demo  
   
