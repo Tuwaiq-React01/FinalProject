@@ -1,5 +1,5 @@
 
-<div dir='rtl'>
+<div dir='rtlltr'>
 
 # Final Project | المشروع النهائي
 
