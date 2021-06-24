@@ -1,21 +1,49 @@
+<div dir="rtl" align="right" >
+<img src="https://i.ibb.co/SV2BSn5/tuwaiq.png" />
+----
+  <br />
 
-<div dir='rtl'>
+# (App_Name) | اسم التطبيق
+  Ejar
 
-# Final Project | المشروع النهائي
+### المقدمــة | Introduction
+  <br/>
+ تطبيق إيجار يسمح للمستخدم بعرض سيارته الني يرغب في تأجيرها على مستخدمين آخرين بالسعر الذي يقوم بتحديده. التطبيق أيضا يسمح للمستخدم بإستئجار سيارات مستخدمين آخرين بأسعار منافسة للسوق
+ <br/>
+ <br/>
 
+  <br/>
+
+### Set up  
+### Prerequisites
+- NET 5 
+- ASP.NET MVC
+- Microsoft SQL Server 
   
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
+### Set up  
+ #### Database
+ ``` dotnet ef database update```
+
+### Front-End  (React)
+ - HTML
+ - CSS
+ - JS
+ - Bootstrap 
+  <br/>
  
 
-<div dir='rtl'>
-  
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+### Back-End 
+ - ASP.NET Api
+ - MSSQL Server
+ - EF Core
+ - Unit Test
+ 
+### Author
+ Turki Alqurashi
+### License & Resource
+- Icons - Google Fonts
+- ASP.NET Identity - www.c-sharpcorner.com
+- Draw.Io
+- Lusid Charts
+
+</div>
