@@ -18,79 +18,42 @@ const ComicDetails = () => {
         <div style={{backgroundImage: `url("https://i.ibb.co/5x1zSb8/marvelbackground-2-1.jpg")` }}>
         {ComicDetails?
     (
-        <form>
-            <div>
-                <label>Name</label>
-                <input
-                    name="Name"
-                    type="text"
-                    value={ComicDetails.Name}
-                    
-                />
-            </div>
-            <div>
-                <label>Character</label>
-                <input
-                    name="Character"
-                    type="text"
-                    value={ComicDetails.Character}
-                    
-                />
-            </div>
-            <div>
-            <label>Writer</label>
-                <input
-                    name="Writer"
-                    type="text"
-                    value={ComicDetails.Writer}
-                    
-                />
-            </div>
-            <div>
-                <label>Publish</label>
-                <input
-                    name="Publish"
-                    type="text"
-                    value={ComicDetails.Publish}
-                    
-                />
-            </div>
-            <div>
-                <label>Cover Artist</label>
-                <input
-                    name="Cover_Artist"
-                    type="text"
-                    value={ComicDetails.Cover_Artist}
-                    
-                />
-            </div>
-            <div>
-                <label>Image Url</label>
-                <input
-                    name="Image"
-                    type="text"
-                    value={ComicDetails.Image}
-                    
-                />
-            </div>
-            <div>
-                <label>Description</label>
-                <input
-                    name="Description"
-                    type="text"
-                    value={ComicDetails.Description}
-                />
-            </div>
-            <div>
-                <label>Status</label>
-                <input
-                    name="Status"
-                    type="text"
-                    value={ComicDetails.Status}
-                />
-            </div>
-        </form>
+        
+        <div class="row">
+            <br></br>
+            <br></br>
+            
 
+            
+            <img src={`${ComicDetails.Image}`} style={{height:"400px", width:"300",marginLeft:"150px"}}></img>
+            
+            <div class="col s6" style={{marginLeft:"66px"}}>
+                <label className="DetailsLabel" style={{fontSize:"28px"}}>{ComicDetails.Name}</label>  
+                <br></br>
+                <br></br>
+                <label  className="DetailsLabel" style={{fontSize:"28px"}}>Comic Character:</label>
+                <br></br>
+                <label className="Details" style={{fontSize:"21px"}}> {ComicDetails.Character}</label>
+                <br></br>
+                <label className="DetailsLabel" style={{fontSize:"28px"}}>Comic Author: </label>
+                <br></br>
+                <label className="DetailsLabel" style={{fontSize:"21px"}}>{ComicDetails.Writer}</label>
+                <br></br>
+                <label className="DetailsLabel" style={{fontSize:"28px"}}>Publication Date:</label>
+                <br></br>
+                <label className="DetailsLabel" style={{fontSize:"21px"}}>{ComicDetails.Publish}</label>
+                <br></br>
+                <label className="DetailsLabel" style={{fontSize:"28px"}}>Cover Artist:</label>
+                <br></br>
+                <label className="DetailsLabel" style={{fontSize:"21px"}}>{ComicDetails.Cover_Artist}</label>
+                <br></br>
+                <p className="DetailsLabel" style={{fontSize:"18px"}}>{ComicDetails.Description}</p>
+<br></br>
+</div>
+<br></br>
+       </div>
+       
+       
     )   
     :
     (<div class="preloader-wrapper big active" style={{margin:"500px"}}>
@@ -106,7 +69,7 @@ const ComicDetails = () => {
     </div>
     )
     }
-        
+    <br></br>
     </div>
     )
 }

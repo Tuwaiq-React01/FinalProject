@@ -25,7 +25,7 @@ export default function CreateForm(props) {
         <div style={{ backgroundImage: `url(https://jackandthegeekstalk.files.wordpress.com/2017/02/comic-books.jpg)` }}>
         <center>
 
-            <br></br>
+           
             <br></br>
         
         
@@ -99,10 +99,9 @@ export default function CreateForm(props) {
         </div>
         <div>
                 <input class="btn" style={{backgroundColor:"red", width:"200px", fontFamily:"marvel"}} type="submit" value="Add" />
-                <br></br>
-                <br></br>
                 </div>
             </form>
+            <br></br>
         </center>
         </div>
     )

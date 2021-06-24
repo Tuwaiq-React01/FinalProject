@@ -27,8 +27,6 @@ const EditForm = () => {
     return (
         <div style={{backgroundImage: `url(https://jackandthegeekstalk.files.wordpress.com/2017/02/comic-books.jpg)` }}>
         <center>
-
-        <br></br>
         <br></br>
         
         {newComic?
@@ -39,63 +37,65 @@ const EditForm = () => {
         <div class="col s12" style={{fontFamily:"marvel"}}>
         <b>Comic Name:</b>
         <div class="input-field inline">
-        <input style={{width:"300px"}} name="Name" type="text" value={newComic.Name} onChange={(e)=>{handleChange(e)}}></input>
+        <input style={{width:"300px", fontFamily:"marvel"}} name="Name" type="text" value={newComic.Name} onChange={(e)=>{handleChange(e)}}></input>
         </div>
         </div>
 
-        <div class="col s12" style={{fontFamily:"marvel"}}>
+        <div class="col s12" style={{fontFamily:"marvel", marginTop:"-40px"}}>
         <b>Comic Character:</b>
         <div class="input-field inline">
-        <input style={{width:"300px"}} name="Character" type="text" value={newComic.Character} onChange={(e)=>{handleChange(e)}}></input>
+        <input style={{width:"300px", fontFamily:"marvel"}} name="Character" type="text" value={newComic.Character} onChange={(e)=>{handleChange(e)}}></input>
         </div>
         </div>
         
-        <div class="col s12" style={{fontFamily:"marvel"}}>
+        <div class="col s12" style={{fontFamily:"marvel", marginTop:"-40px"}}>
         <b>Comic Author:</b>
         <div class="input-field inline">
-        <input style={{width:"300px"}} name="Writer" type="text" value={newComic.Writer} onChange={(e)=>{handleChange(e)}}></input>
+        <input style={{width:"300px", fontFamily:"marvel"}} name="Writer" type="text" value={newComic.Writer} onChange={(e)=>{handleChange(e)}}></input>
         </div>
         </div>
         
-        <div class="col s12" style={{fontFamily:"marvel"}}>
+        <div class="col s12" style={{fontFamily:"marvel", marginTop:"-40px"}}>
         <b>Publication Date:</b>
         <div class="input-field inline">
-        <input style={{width:"300px"}} name="Publish" type="text" value={newComic.Publish} onChange={(e)=>{handleChange(e)}}></input>
+        <input style={{width:"300px", fontFamily:"marvel"}} name="Publish" type="text" value={newComic.Publish} onChange={(e)=>{handleChange(e)}}></input>
         </div>
         </div>
 
-        <div class="col s12" style={{fontFamily:"marvel"}}>
+        <div class="col s12" style={{fontFamily:"marvel", marginTop:"-40px"}}>
         <b>Cover Artist:</b>
         <div class="input-field inline">
-        <input style={{width:"300px"}} name="Cover_Artist" type="text" value={newComic.Cover_Artist} onChange={(e)=>{handleChange(e)}}></input>
+        <input style={{width:"300px", fontFamily:"marvel"}} name="Cover_Artist" type="text" value={newComic.Cover_Artist} onChange={(e)=>{handleChange(e)}}></input>
         </div>
         </div>
 
-        <div class="col s12" style={{fontFamily:"marvel"}}>
+        <div class="col s12" style={{fontFamily:"marvel", marginTop:"-40px"}}>
         <b>Image URL:</b>
         <div class="input-field inline">
-        <input style={{width:"300px"}} name="Image" type="text" value={newComic.Image} onChange={(e)=>{handleChange(e)}}></input>
+        <input style={{width:"300px", fontFamily:"marvel"}} name="Image" type="text" value={newComic.Image} onChange={(e)=>{handleChange(e)}}></input>
         </div>
         </div>
 
-        <div class="col s12" style={{fontFamily:"marvel"}}>
+        <div class="col s12" style={{fontFamily:"marvel", marginTop:"-40px"}}>
         <b>Description:</b>
         <div class="input-field inline">
-        <input style={{width:"300px"}} name="Description" type="text" value={newComic.Description} onChange={(e)=>{handleChange(e)}}></input>
+        <input style={{width:"300px", fontFamily:"marvel"}} name="Description" type="text" value={newComic.Description} onChange={(e)=>{handleChange(e)}}></input>
         </div>
         </div>
 
-        <div class="col s12" style={{fontFamily:"marvel"}}>
+        <div class="col s12" style={{fontFamily:"marvel", marginTop:"-40px"}}>
         <b>Status:</b>
         <div class="input-field inline">
-        <input style={{width:"300px"}} name="Status" type="text" value={newComic.Status} onChange={(e)=>{handleChange(e)}}></input>
+        <input style={{width:"300px", fontFamily:"marvel"}} name="Status" type="text" value={newComic.Status} onChange={(e)=>{handleChange(e)}}></input>
         </div>
         </div>
-        
-            <div>
-                <input type="submit" value="Add" />
-            </div>
-            </div>
+        </div>
+        <div>
+                <input class="btn" style={{backgroundColor:"red", width:"200px", fontFamily:"marvel"}} type="submit" value="Add" />
+                <br></br>
+                <br></br>
+                </div>
+            
         </form>
 
     )   

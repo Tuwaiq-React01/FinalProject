@@ -26,6 +26,16 @@ code {
     monospace;
 }
 
+.DetailsLabel{
+  font-family: "marvel";
+  color: aliceblue;
+}
+
+.Details{
+  font-family: "marvel";
+  color: aliceblue;
+}
+
 .ComicCard{
   margin: 20px;
 }
