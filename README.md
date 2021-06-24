@@ -41,6 +41,8 @@ json-server --watch db.json
 - JSX
 - CSS
 - MaterializeCSS
+- Responsive Design
+- Google Fonts
 
 ## Author
 - Reema Alyousef
