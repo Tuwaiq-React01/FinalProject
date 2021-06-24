@@ -1,0 +1,141 @@
+.main {
+  margin-top: 5em;
+}
+
+.center {
+  justify-content: center;
+  padding: 10px;
+}
+
+.ui.search input {
+  width: 100%;
+  border-radius: 0 !important;
+}
+
+.item {
+  padding: 15px 0px !important;
+}
+
+i.icon {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.right {
+  float: right !important;
+}
+.center-div {
+  text-align: center;
+}
+
+.rounded-circle {
+  height: 150px;
+  width: 180px;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  height: 300px;
+}
+img {
+  border: 1px solid rgb(152, 87, 87);
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  height: 300px;
+}
+.test {
+  font-family: 'Baloo Tammudu 2'; 
+   justify-content:space-between;
+  color: rgb(36, 30, 30);
+  font-style: unset;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.photo {
+  justify-content:safe;
+width: 1850px;
+height: 670px;
+}
+
+Time {
+  justify-content: center;
+  font-size: calc(8px + 2vmin);
+  color: white;
+}
+.Clock {
+  border: 1px solid rgb(255, 255, 255);
+  height:40px;
+  width: 40px;
+  justify-content:space-evenly;
+}
+
+.Account{
+  border: 5px solid rgb(251, 239, 171);
+  height: 150px;
+  width: 210px;
+}
+.Accounta{
+  border: 1px solid rgb(255, 255, 255);
+  height: 150px;
+  width: 210px;
+}
+.p{
+  border: 1px solid rgb(255, 255, 255);
+  height: 500px;
+  width: 700px; 
+}
+
+.n{
+  border: 1px solid rgb(255, 255, 255);
+  height: 200px;
+  width: 2000px; 
+  justify-content:center;
+  padding: 2px;
+
+}
+.c{
+  height: 500px;
+  width: 600px; 
+}
