@@ -1,21 +1,38 @@
+# App Name : Game store
+    ##  Introduction
+    React app for managing products of the game store
+    # DEMO
+    
+ ---
 
-<div dir='rtl'>
-
-# Final Project | المشروع النهائي
-
-  
-  </div>
-  
-  
-  <img width="755" alt="Screen Shot 1442-11-06 at 1 38 58 PM" src="https://user-images.githubusercontent.com/80157029/122204807-37260c00-cea8-11eb-9472-f7f48bc3ffdf.png">
+ ![Demo 1](https://raw.githubusercontent.com/NorahMAlmutairi/FinalProject/main/demo1.png)
+ 
+ ---
  
 
-<div dir='rtl'>
+ ![Demo 2](https://raw.githubusercontent.com/NorahMAlmutairi/FinalProject/main/demo2.png)
+ 
+    ## Set up
+    - visual studio code
+    -  node Js
+    ## Prerequisites
+    	- npm i  react-router-dome
+    	- npm i  react-Facebook-login
+    	- npm i axios
+    	- npm i bootstrap
+    	- API []
+    ##  Front-End
+    - React
+    - HTML
+    - CSS
+    - JavaScript
+    - -Bootstrap
+    ##  Back-End
+    *Database*
+    SQL Server 
+    *ASP. NET*
+    ASP Web Application API
   
-مصدر (API): https://jsonplaceholder.typicode.com/
-  
-مصدر (FireBase Auth): https://react-firebase-js.com/docs/react-firebase-auth/getting-started
-  
-مصدر لرفع المشروع على (github): https://github.com/gitname/react-gh-pages
-  
-  </div>
+    ###  Author
+    Norah Almutairi
+    ##
