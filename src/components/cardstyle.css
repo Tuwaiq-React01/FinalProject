@@ -1,0 +1,7 @@
+
+.quote{
+    display: grid ;
+    grid-template-columns: repeat(4,25%); 
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
