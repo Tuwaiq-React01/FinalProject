@@ -23,12 +23,15 @@ https://user-images.githubusercontent.com/82446110/123200869-431e5900-d4ba-11eb-
 
 
 ### In this project   
+ #Front end
  - HTML
  - CSS
  - JS
  - Semantic UI
  - Bootstrap 
+ #Back end
 - Json server 
+#Imlement all requirements
 - axios
 - classes & function 
 - implement edit & add & Delete & update (CRUD on Api )
