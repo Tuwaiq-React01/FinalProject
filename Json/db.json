@@ -1,27 +1,11 @@
 {
   "paintings": [
     {
-      "id": "1",
-      "name": "STANDING TOGETHER",
-      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/AngeloAccardi-StandingTogether.1_1_1100x.jpg?v=1596095563",
-      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
-      "price": "10400",
-      "artistId": "2"
-    },
-    {
       "id": "2",
       "name": "LOOKING ",
       "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/AngeloAccardi-LookingDown.1_1_1100x.jpg?v=1606219907",
       "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
       "price": "8300",
-      "artistId": "2"
-    },
-    {
-      "id": "3",
-      "name": "ABBEY ROAD",
-      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/AngeloAccardi-AbbeyRoad.1_860x.jpg?v=1596111743",
-      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
-      "price": "5200",
       "artistId": "2"
     },
     {
@@ -54,22 +38,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/COVERGIRLMarilyn_1_1100x.jpg?v=1606836043",
       "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
       "price": "10314",
-      "artistId": "2"
-    },
-    {
-      "id": "8",
-      "name": "JUST A MOUSE",
-      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/JUSTAMOUSE__1_1100x.jpg?v=1606833970",
-      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
-      "price": "5550",
-      "artistId": "2"
-    },
-    {
-      "id": "9",
-      "name": "THE LAST STAR",
-      "image": "https://cdn.shopify.com/s/files/1/0436/1171/7792/products/THELASTSTAR__1_1100x.jpg?v=1606833845",
-      "overview": "Multilayered Papercut 80x100 cm | 31x39 in Limited Edition",
-      "price": "3414",
       "artistId": "2"
     }
   ],
