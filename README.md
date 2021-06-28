@@ -1,4 +1,4 @@
-<div dir="rtl" >
+
 
 ![Tuwaiq](https://i.ibb.co/SV2BSn5/tuwaiq.png)
 ----
@@ -6,13 +6,15 @@
 
 
 
+<img src="https://i.ibb.co/4WKWh4Y/Logo.png" alt="Gallery-logo" width=600>
 
 
-### المقدمــة | Introduction 
+### Introduction 
+Great Art is measured by its influence, therefore, this web application was made to display the most influential pieces of many great artists.
+This project supports the artist and the art enthusiast, where artists can log in and display information about their paintings to all who are intrusted.
 
-الفن الجيد ليس ما يبدو في ظاهره، بل ما يفعله في حياتنا بتأثيره، لذا تم تصميم هذا المشروع ليكون  بمثابة معرض لأجمل اللوحات لبعض الرسامين المختصين بالفنون التي تميزهم. يدعم هذا المشروع الفنان والمهتم بالفن، حيث يستطيع الفنان الدخول وعرض معلومات لوحاته لجميع المهتمين.
-
-
+### Wireframe  
+<p>You can view application wireframe <a href="https://wireframe.cc/pro/pp/94731482c452947" rel="nofollow">here</a></p> 
 
 
 
@@ -58,6 +60,7 @@ in another port run
  - HTML
  - Bootstrap 
  - Materializecss
+ - Google Fonts
 
 ## Author
 - Samirah Alhusayni
